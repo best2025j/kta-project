@@ -8,8 +8,16 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
+  // Enable dark mode based on the class applied to the <html> element
+  darkMode: ["class", '[data-mode="dark"]'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkBackground: "#1a202c", // Dark mode background color
+        darkText: "#ffffff", // Dark mode text color
+      },
+    },
   },
   plugins: [],
 };
