@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../components/layout/Navbar";
+import Layout from "../../components/layout/layout";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Layout />
     </div>
   );
 };

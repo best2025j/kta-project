@@ -6,11 +6,16 @@ import { Link } from "react-router-dom";
 import ButtonDefault from "../Buttons/ButtonDefault";
 // import DarkModeSwitch from "../ui/DarkModeSwitch";
 
-const Navbar = () => {
+const Header = () => {
   const [nav, setNav] = useState(false);
   // Function to handle menu icon click
 
   const handClick = () => setNav(!nav);
+  const handleOrderClick = () => {
+    console.log("Order placed!");
+  };
+
+  const handleClose = () => setNav(!nav);
 
   return (
     <div
@@ -115,19 +120,19 @@ const Navbar = () => {
             </div> */}
             <div className="flex flex-col pt-3 ">
               <ul className="font-500">
-                <li>
+                <li onClick={handleClose}>
                   <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li onClick={handleClose}>
                   <Link to="/courses">Courses</Link>
                 </li>
-                <li>
+                <li onClick={handleClose}>
                   <Link to="/services">Services</Link>
                 </li>
-                <li>
+                <li onClick={handleClose}>
                   <Link to="/about">About</Link>
                 </li>
-                <li>
+                <li onClick={handleClose}>
                   <Link to="/blog">Blog</Link>
                 </li>
               </ul>
@@ -153,4 +158,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
