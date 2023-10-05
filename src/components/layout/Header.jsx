@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import image from "../../assets/images/kwaraTech.jpg";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import ButtonDefault from "../Buttons/ButtonDefault";
 // import DarkModeSwitch from "../ui/DarkModeSwitch";
 
@@ -11,11 +11,17 @@ const Header = () => {
   // Function to handle menu icon click
 
   const handClick = () => setNav(!nav);
-  const handleOrderClick = () => {
-    console.log("Order placed!");
+  const handleClose = () => setNav(!nav);
+
+  const location = useLocation();
+  const isActiveLink = (path) => {
+    return location.pathname === path;
   };
 
-  const handleClose = () => setNav(!nav);
+  console.log(location);
+
+  const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
+  const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
 
   return (
     <div
@@ -39,20 +45,22 @@ const Header = () => {
 
         {/* destop view Navigation links */}
         <ul className="hidden md:flex capitalize space-x-2">
-          <li>
-            <Link to="/">Home</Link>
+          <li className={isActiveLink("/") ? activeLink : inactiveLink}>
+            <NavLink exact="true" to="/">
+              Home
+            </NavLink>
           </li>
-          <li>
-            <Link to="/courses">Courses</Link>
+          <li className={isActiveLink("/courses") ? activeLink : inactiveLink}>
+            <NavLink to="/courses">Courses</NavLink>
           </li>
-          <li>
-            <Link to="/services">Services</Link>
+          <li className={isActiveLink("/services") ? activeLink : inactiveLink}>
+            <NavLink to="/services">Services</NavLink>
           </li>
-          <li>
-            <Link to="/about">About</Link>
+          <li className={isActiveLink("/about") ? activeLink : inactiveLink}>
+            <NavLink to="/about">About</NavLink>
           </li>
-          <li>
-            <Link to="/blog">Blog</Link>
+          <li className={isActiveLink("/blog") ? activeLink : inactiveLink}>
+            <NavLink to="/blog">Blog</NavLink>
           </li>
         </ul>
 
@@ -64,7 +72,7 @@ const Header = () => {
           </div>
 
           <div className="">
-            <ButtonWhite label="Signup" className={""} />
+            <ButtonWhite label="Sign up" className={""} />
           </div>
 
           <div className="">{/* <DarkModeSwitch /> */}</div>
@@ -120,20 +128,39 @@ const Header = () => {
             </div> */}
             <div className="flex flex-col pt-3 ">
               <ul className="font-500">
-                <li onClick={handleClose}>
-                  <Link to="/">Home</Link>
+                <li
+                  className={isActiveLink("/") ? activeLink : inactiveLink}
+                  onClick={handleClose}
+                >
+                  <NavLink to="/">Home</NavLink>
                 </li>
-                <li onClick={handleClose}>
-                  <Link to="/courses">Courses</Link>
+                <li
+                  className={
+                    isActiveLink("/courses") ? activeLink : inactiveLink
+                  }
+                  onClick={handleClose}
+                >
+                  <NavLink to="/courses">Courses</NavLink>
                 </li>
-                <li onClick={handleClose}>
-                  <Link to="/services">Services</Link>
+                <li
+                  className={
+                    isActiveLink("/services") ? activeLink : inactiveLink
+                  }
+                  onClick={handleClose}
+                >
+                  <NavLink to="/services">Services</NavLink>
                 </li>
-                <li onClick={handleClose}>
-                  <Link to="/about">About</Link>
+                <li
+                  className={isActiveLink("/about") ? activeLink : inactiveLink}
+                  onClick={handleClose}
+                >
+                  <NavLink to="/about">About</NavLink>
                 </li>
-                <li onClick={handleClose}>
-                  <Link to="/blog">Blog</Link>
+                <li
+                  className={isActiveLink("/blog") ? activeLink : inactiveLink}
+                  onClick={handleClose}
+                >
+                  <NavLink to="/blog">Blog</NavLink>
                 </li>
               </ul>
 
