@@ -4,12 +4,11 @@
 @import 'tailwindcss/utilities';
 
 
-html {
-  font-family: sf;
-}
+
 
 @layer base {
     body {
       @apply  dark:bg-black ;
     }
+
   }
