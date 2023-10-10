@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CarouselCard = () => {
   const staffData = [
@@ -9,14 +9,11 @@ const CarouselCard = () => {
       image: "/Courses card for html (1).png",
     },
     {
-      image: "/Courses card for html.png",
+      image: "/Courses card for html (2).png",
     },
     {
-      image: "/Courses card for html (1).png",
+      image: "/Courses card for html (3).png",
     },
-    // {
-    //   image: "/KTA.png",
-    // },
   ];
 
   return (
@@ -34,14 +31,16 @@ const CarouselCard = () => {
         </div>
       </div>
 
-      <div className="grid grid-col-1 md:grid-cols-2 gap-6 py-6">
-        {staffData.map((item, index) => (
-          <div className="" key={index}>
-            <div className="flex">
-              <img src={item.image} alt="" />
+      <div className="flex flex-row gap-6 py-6">
+        <div className="grid grid-col-1 md:grid-cols-2 gap-10 py-6">
+          {staffData.map((item, index) => (
+            <div className="" key={index}>
+              <div className="flex">
+                <img src={item.image} alt="" />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
