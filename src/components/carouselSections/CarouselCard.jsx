@@ -31,7 +31,7 @@ const CarouselCard = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-6 py-6">
+      <div className="flex flex-row gap-6 items-center py-6">
         <div className="grid grid-col-1 md:grid-cols-2 gap-10 py-6">
           {staffData.map((item, index) => (
             <div className="" key={index}>
@@ -40,6 +40,10 @@ const CarouselCard = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div>
+          <img src="/KTA.png" alt="" />
         </div>
       </div>
     </div>
