@@ -42,7 +42,7 @@ const CarouselCard = () => {
           ))}
         </div>
 
-        <div>
+        <div className="">
           <img src="/KTA.png" alt="" />
         </div>
       </div>
