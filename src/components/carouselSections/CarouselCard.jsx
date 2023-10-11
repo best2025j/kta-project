@@ -50,7 +50,7 @@ const CarouselCard = () => {
                 </div>
 
                 {hoveredIndex === index && (
-                  <div className="absolute animate__animated animate__zoomIn delay-120 hover:scale-105 ease-in duration-300  inset-y-20 flex flex-grow justify-center items-center h-full w-[500px]">
+                  <div className="absolute animate__animated animate__zoomIn delay-120  ease-in-out duration-100  inset-y-20 flex flex-grow justify-center items-center h-full w-[500px]">
                     <img
                       src={item.fullImage}
                       alt=""
@@ -62,7 +62,7 @@ const CarouselCard = () => {
             ))}
           </div>
 
-          <div className="">
+          <div className="pr-6">
             <img src="/KTA.png" alt="" />
           </div>
         </div>
