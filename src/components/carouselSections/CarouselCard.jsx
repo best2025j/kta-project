@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "animate.css";
+import ButtonWhite from "../Buttons/ButtonWhite";
 
 const CarouselCard = () => {
   const staffData = [
-    { thumbnail: "/Courses card for html.png", fullImage: "/frontendfull.png" },
+    {
+      thumbnail: "/Courses card for html.png",
+      fullImage: "/frontendfull.png",
+    },
     {
       thumbnail: "/Courses card for html (1).png",
       fullImage: "/backendfull.png",
@@ -20,8 +24,26 @@ const CarouselCard = () => {
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  const ViewAllCoursesIcon = () => (
+    <div className="text-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-4 h-4"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+        />
+      </svg>
+    </div>
+  );
+
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-full">
       <div className="ml-32 py-32 space-y-[110px]">
         <div className="h-full w-full space-y-3">
           <h1 className="sm:text-5xl text-xl font-bold">Explore our courses</h1>
@@ -45,16 +67,16 @@ const CarouselCard = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="flex flex-grow">
-                  <img src={item.thumbnail} alt="" width={300} height={300} />
+                <div className="">
+                  <img src={item.thumbnail} alt="" />
                 </div>
 
                 {hoveredIndex === index && (
-                  <div className="absolute animate__animated animate__zoomIn delay-120  ease-in-out duration-100  inset-y-20 flex flex-grow justify-center items-center h-full w-[500px]">
+                  <div className="absolute animate__animated animate__zoomIn delay-120  ease-in-out duration-100  inset-y-24 flex flex-grow justify-center items-center h-full w-[500px]">
                     <img
                       src={item.fullImage}
                       alt=""
-                      className="h-[490px] w-full"
+                      className="h-[600px] w-full"
                     />
                   </div>
                 )}
@@ -66,6 +88,17 @@ const CarouselCard = () => {
             <img src="/KTA.png" alt="" />
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center relative">
+        <ButtonWhite
+          className={"absolute -top-28 flex items-center"}
+          label={
+            <>
+              View all courses <ViewAllCoursesIcon />
+            </>
+          }
+        />
       </div>
     </div>
   );

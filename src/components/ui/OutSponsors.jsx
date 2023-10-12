@@ -16,7 +16,7 @@ const OutSponsors = () => {
           {staffData.map((image, index) => (
             <div
               key={index}
-              className="flex justify-center items-center hover:bg-slate-100 rounded-3xl p-2 sm:flex dark:bg-slate-800 h-full w-auto flex-col"
+              className="flex justify-center items-center rounded-3xl p-2 sm:flex h-full w-auto flex-col"
             >
               <img
                 className="h-14 w-14 md:h-full md:w-full"
