@@ -5,6 +5,7 @@ import ButtonWhite from "../Buttons/ButtonWhite";
 const CarouselCard = () => {
   const staffData = [
     {
+      svg: "",
       thumbnail: "/Courses card for html.png",
       fullImage: "/frontendfull.png",
     },
@@ -25,7 +26,7 @@ const CarouselCard = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const ViewAllCoursesIcon = () => (
-    <div className="text-white">
+    <div className="text-white pt-1 pl-1">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -62,17 +63,19 @@ const CarouselCard = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-6">
             {staffData.map((item, index) => (
               <div
-                className="relative"
+                className={`relative transform ${
+                  hoveredIndex === index ? "hovered" : ""
+                }`}
                 key={index}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="">
+                <div className="image-container">
                   <img src={item.thumbnail} alt="" />
                 </div>
 
                 {hoveredIndex === index && (
-                  <div className="absolute animate__animated animate__zoomIn delay-120  ease-in-out duration-100  inset-y-24 flex flex-grow justify-center items-center h-full w-[500px]">
+                  <div className="absolute animate__animated animate__zoomIn delay-120 ease-in-out duration-100 inset-y-24 flex flex-grow justify-center items-center h-full w-[500px]">
                     <img
                       src={item.fullImage}
                       alt=""
