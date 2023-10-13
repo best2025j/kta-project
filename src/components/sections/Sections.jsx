@@ -37,16 +37,17 @@ const Sections = () => {
         </p>
       </div>
 
-      <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-6">
-          {data.map((item, index) => (
-            <div className="relative" key={index}>
-              <div className="">{item.svg}</div>
-              <h1>{item.headings}</h1>
-              <p>{item.paragraph}</p>
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-6">
+        {data.map((item, index) => (
+          <div
+            className="relative bg-[#FBFCFF] py-[56px] rounded-3xl px-[24px] space-y-2"
+            key={index}
+          >
+            <div>{item.svg}</div>
+            <h1 className="font-bold text-4xl w-[288px]">{item.headings}</h1>
+            <p className="text-lg py-[16px]">{item.paragraph}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
