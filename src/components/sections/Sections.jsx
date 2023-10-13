@@ -1,7 +1,7 @@
 import React from "react";
-import CoWorkingSpacesSVG from "../svg/CoWorkingSpacesSVG";
-import EssentialICTTrainingSVG from "../svg/EssentialICTTrainingSVG";
-import SpecializedProgrammesSVG from "../svg/SpecializedProgrammesSVG";
+import CoWorkingSpacesSVG from "../icons/CoWorkingSpacesSVG";
+import EssentialICTTrainingSVG from "../icons/EssentialICTTrainingSVG";
+import SpecializedProgrammesSVG from "../icons/SpecializedProgrammesSVG";
 
 const Sections = () => {
   // SVG components
