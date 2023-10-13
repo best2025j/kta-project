@@ -1,6 +1,6 @@
 import React from "react";
 
-const ViewAllCoursesIcon = () => {
+const ViewAllCourseIcon = () => {
   return (
     <div className="text-white pt-1 pl-1">
       <svg
@@ -20,4 +20,4 @@ const ViewAllCoursesIcon = () => {
   );
 };
 
-export default ViewAllCoursesIcon;
+export default ViewAllCourseIcon;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "animate.css";
 import ButtonWhite from "../Buttons/ButtonWhite";
-import ViewAllCoursesIcon from "../icons/ViewAllCoursesIcon.JSX";
+import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 
 const CarouselCard = () => {
   const staffData = [
@@ -81,7 +81,7 @@ const CarouselCard = () => {
           className={"absolute -top-28 flex items-center"}
           label={
             <>
-              View all courses <ViewAllCoursesIcon />
+              View all courses <ViewAllCourseIcon />
             </>
           }
         />
