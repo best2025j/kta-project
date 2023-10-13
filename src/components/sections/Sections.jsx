@@ -27,10 +27,10 @@ const Sections = () => {
   ];
 
   return (
-    <div className="py-40 bg-[#ffffff]">
-      <div className="">
-        <h1> What we have to offer</h1>
-        <p>
+    <div className="py-40 bg-[#ffffff] px-14">
+      <div className="space-y-[16px]">
+        <h1 className="text-5xl font-bold"> What we have to offer</h1>
+        <p className="text-lg font-normal text-[#4F616D] w-[480px]">
           At Kwaratech Academy, we're not just another tech education provider;
           we're your partner in unlocking a world of opportunities, and here is
           why you should choose us.
@@ -45,7 +45,7 @@ const Sections = () => {
           >
             <div>{item.svg}</div>
             <h1 className="font-bold text-4xl w-[288px]">{item.headings}</h1>
-            <p className="text-lg py-[16px]">{item.paragraph}</p>
+            <p className="text-md py-[16px]">{item.paragraph}</p>
           </div>
         ))}
       </div>
