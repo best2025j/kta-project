@@ -9,13 +9,12 @@ const ContactUs = () => {
         <img
           src="/Image for Contact Us.png"
           alt="image"
-          className="rounded-l-[240px] h-[595px]"
+          className="rounded-l-[240px] h-[595px] w-full"
         />
       </div>
 
       <div className="flex-1 bg-[#001E2D] w-full h-[595px] rounded-r-[240px]">
         <div className="flex flex-col mx-auto h-full w-full items-center justify-center">
-          {" "}
           <div className="text-[#fff] space-y-[16px]">
             <h1 className="text-6xl font-bold">Reach Out to Us</h1>
             <p className="w-[438px] text-lg font-normal">
