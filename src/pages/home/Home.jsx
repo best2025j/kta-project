@@ -5,6 +5,7 @@ import Hero from "../../components/ui/Hero";
 import OutSponsors from "../../components/ui/OutSponsors";
 import CarouselCard from "../../components/carouselSections/CarouselCard";
 import Sections from "../../components/sections/Sections";
+import ContactUs from "../../components/ui/ContactUs";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <OutSponsors />
       <CarouselCard />
       <Sections />
+      <ContactUs />
     </div>
   );
 };
