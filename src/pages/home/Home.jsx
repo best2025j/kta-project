@@ -7,6 +7,7 @@ import Sections from "../../components/sections/Sections";
 import ContactUs from "../../components/ui/ContactUs";
 import Instructors from "../../components/carouselSections/Instructors";
 import CarouselCards from "../../components/carouselSections/CarouselCards";
+import Testimony from "../../components/ui/Testimony";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Sections />
       <ContactUs />
       <Instructors />
+      <Testimony />
     </div>
   );
 };
