@@ -38,7 +38,7 @@ const Instructors = () => {
 
   return (
     <div className="w-full h-full py-10 flex flex-col items-center mx-auto ">
-      <div className=" inline-flex flex-col items-start">
+      <div className=" inline-flex flex-col items-start max-w-[1200px]">
         <div className="w-[535px] space-y-5">
           <h1 className="text-5xl font-bold">Meet Our Instructors</h1>
           <p className="text-md">

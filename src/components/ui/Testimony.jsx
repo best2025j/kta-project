@@ -5,8 +5,8 @@ const Testimony = () => {
     <div className=" bg-[#fff] text-white h-full py-10 ">
       <div className="w-[80%] flex justify-center items-center flex-col mx-auto">
         <h1 className="text-black text-5xl font-bold">Testimonials</h1>
-        <div className="flex justify-between py-10  gap-10">
-          <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 space-y-3 text-justify">
+        <div className="flex justify-between items-center py-10 gap-10">
+          <div className="bg-[#4F616D] rounded-[60px] h-full w-full p-10 space-y-3 text-justify">
             <img src="/semi.png" alt="" />
             <h1 className="text-lg">
               I started my tech journey with Kwaratech Academy's essential ICT

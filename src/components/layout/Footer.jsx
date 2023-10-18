@@ -99,7 +99,7 @@ const Footer = () => {
 
         <div className="flex justify-between">
           <h6>© 2023 KTA. All rights reserved.</h6>
-          <ul className="flex space-x-8 text-sm">
+          <ul className="flex space-x-16 text-sm">
             <li className={isActiveLink("/") ? activeLink : inactiveLink}>
               <NavLink exact="true" to="/">
                 Home
