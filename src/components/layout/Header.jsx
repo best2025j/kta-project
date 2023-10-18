@@ -18,7 +18,6 @@ const Header = () => {
     return location.pathname === path;
   };
 
-  console.log(location);
 
   const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
   const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
@@ -44,7 +43,7 @@ const Header = () => {
         </Link>
 
         {/* destop view Navigation links */}
-        <ul className="hidden md:flex capitalize space-x-2">
+        <ul className="hidden md:flex capitalize space-x-6">
           <li className={isActiveLink("/") ? activeLink : inactiveLink}>
             <NavLink exact="true" to="/">
               Home
