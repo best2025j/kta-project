@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../../components/layout/Layout";
 import Corousel from "../../components/ui/Corousel";
 import Hero from "../../components/ui/Hero";
 import OutSponsors from "../../components/ui/OutSponsors";
@@ -8,11 +7,11 @@ import ContactUs from "../../components/ui/ContactUs";
 import Instructors from "../../components/carouselSections/Instructors";
 import CarouselCards from "../../components/carouselSections/CarouselCards";
 import Testimony from "../../components/ui/Testimony";
+import Footer from "../../components/layout/Footer";
 
 const Home = () => {
   return (
-    <div>
-      <Layout />
+    <>
       <Hero />
       <Corousel />
       <OutSponsors />
@@ -21,7 +20,8 @@ const Home = () => {
       <ContactUs />
       <Instructors />
       <Testimony />
-    </div>
+      <Footer />
+    </>
   );
 };
 
