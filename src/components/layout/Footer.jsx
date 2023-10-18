@@ -26,7 +26,7 @@ const Footer = () => {
   const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
 
   return (
-    <div className="bg-[#001E2D] py-40 text-white">
+    <div className="bg-[#001E2D] py-40 text-white w-full h-[620px]">
       <div className="w-[90%] mx-auto space-y-6">
         <div className="flex justify-between items-center">
           <div>
