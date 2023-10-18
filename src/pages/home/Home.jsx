@@ -3,9 +3,11 @@ import Layout from "../../components/layout/Layout";
 import Corousel from "../../components/ui/Corousel";
 import Hero from "../../components/ui/Hero";
 import OutSponsors from "../../components/ui/OutSponsors";
-import CarouselCard from "../../components/carouselSections/CarouselCard";
 import Sections from "../../components/sections/Sections";
 import ContactUs from "../../components/ui/ContactUs";
+import Instructors from "../../components/carouselSections/Instructors";
+import CarouselCards from "../../components/carouselSections/CarouselCards";
+import Testimony from "../../components/ui/Testimony";
 
 const Home = () => {
   return (
@@ -14,9 +16,11 @@ const Home = () => {
       <Hero />
       <Corousel />
       <OutSponsors />
-      <CarouselCard />
+      <CarouselCards />
       <Sections />
       <ContactUs />
+      <Instructors />
+      <Testimony />
     </div>
   );
 };
