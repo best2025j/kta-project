@@ -4,7 +4,7 @@ import images from "../../assets/images/KTA. logo.png";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import { FaFacebook } from "react-icons/fa";
-import { BiLogoLinkedin } from "react-icons/Bi";
+import { BiLogoLinkedin } from "react-icons/bi";
 import fb from "../../assets/svgs/facebooklogo.svg";
 import ig from "../../assets/svgs/ig.svg";
 import Twitter from "../../assets/svgs/Twitterlogo.svg";
