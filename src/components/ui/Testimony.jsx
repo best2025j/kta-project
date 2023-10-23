@@ -18,7 +18,7 @@ const Testimony = () => {
             <h5 className="flex justify-end py-4">Amina Yusuf</h5>
           </div>
 
-          <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 space-y-3 text-justify">
+          <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 self-stretch space-y-3 text-justify">
             <img src="/semi.png" alt="" />
             <h1 className="text-lg">
               "I can't thank Kwaratech Academy enough for their top-notch tech
