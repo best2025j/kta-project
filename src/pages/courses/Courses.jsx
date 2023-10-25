@@ -22,7 +22,7 @@ const Courses = () => {
     {
       id: 2,
       number: 2,
-      image: "/Design.png",
+      image: "/Designs.png",
       course: "Design/ Animation",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
       name: "Duration",
@@ -46,7 +46,7 @@ const Courses = () => {
     {
       id: 4,
       number: 4,
-      image: "/DataScience.png",
+      image: "/DataSciences.png",
       course: "Data & Analytics",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
       name: "Duration",
@@ -58,7 +58,7 @@ const Courses = () => {
     {
       id: 5,
       number: 5,
-      image: "/CyberSec.png",
+      image: "/CyberSecuritys.png",
       course: "Cybersecurity",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
       name: "Duration",
