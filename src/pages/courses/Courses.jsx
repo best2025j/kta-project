@@ -70,7 +70,7 @@ const Courses = () => {
     {
       id: 6,
       number: 6,
-      image: "/VA-Remote Jobs.png",
+      image: "/VirtualRemoteJob.png",
       course: "Virtual Assistance and Remote Jobs",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
       name: "Duration",
@@ -82,7 +82,7 @@ const Courses = () => {
     {
       id: 7,
       number: 7,
-      image: "/D-Marketting.png",
+      image: "/DMarketting.png",
       course: "Digital Marketing",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
       name: "Duration",
