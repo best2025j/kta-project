@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div className="py-40">
         <h1>about page</h1>
-      </div>{" "}
+      </div>
       <SectionContents />
       <Footer />
     </>

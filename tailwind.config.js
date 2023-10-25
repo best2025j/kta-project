@@ -14,6 +14,9 @@ module.exports = {
         darkBackground: "#1a202c", // Dark mode background color
         darkText: "#ffffff", // Dark mode text color
       },
+      fontFamily: {
+        sans: ["SFPro", "sans"], // 'sans' is a generic font family fallback
+      },
     },
   },
 
