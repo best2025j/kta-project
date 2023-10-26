@@ -108,7 +108,7 @@ const Courses = () => {
   return (
     <>
       <div className="py-40">
-        <div className="space-y-3">
+        <div className="space-y-3 px-6">
           <h1 className="text-5xl font-bold">Courses</h1>
           <p className="text-lg font-thin">
             Unlock Your Potential with Kwaratech Academy's Diverse Range of Tech
@@ -119,7 +119,6 @@ const Courses = () => {
         <div className="grid gap-6 grid-cols-1">
           {courseData.map((item, index) => (
             <div
-            // 
               className={`flex justify-around py-20 ${
                 (index % 2 === 0 && "flex") ||
                 (index % 2 !== 0 && "flex-row-reverse")

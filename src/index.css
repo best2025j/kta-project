@@ -1,8 +1,7 @@
 /* styles.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Add this CSS to your stylesheet */
 .relative {
@@ -10,39 +9,40 @@
 }
 
 .relative.hovered {
-  transform: translateX(50px); /* Adjust the translation value as needed */
+  transform: translateX(-50px); /* Adjust the translation value as needed */
 }
 
 .image-container {
   overflow: hidden;
 }
 
-.change {
+/* .change {
   transform: rotate(45deg);
-}
+} */
+
 .container {
   display: inline-block;
   cursor: pointer;
 }
 
 @font-face {
-  font-family: 'SFPro';
-  src: url('./assets/fonts/sf_Display/SF-Pro-Display-Regular.ttf') format('truetype');
+  font-family: "SFPro";
+  src: url("./assets/fonts/sf_Display/SF-Pro-Display-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SFPro';
-  src: url('./assets/fonts/sf_Display/SF-Pro-Display-Bold.ttf') format('truetype');
+  font-family: "SFPro";
+  src: url("./assets/fonts/sf_Display/SF-Pro-Display-Bold.ttf")
+    format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
-
 @layer base {
-    body {
-      @apply  dark:bg-black bg-[#FBFCFF] font-sans;
-    }
-
+  body {
+    @apply dark:bg-black bg-[#FBFCFF] font-sans;
   }
+}
