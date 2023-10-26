@@ -117,8 +117,15 @@ const Courses = () => {
         </div>
 
         <div className="grid gap-6 grid-cols-1">
-          {courseData.map((item) => (
-            <div className="flex justify-around py-20" key={item.id}>
+          {courseData.map((item, index) => (
+            <div
+            // 
+              className={`flex justify-around py-20 ${
+                (index % 2 === 0 && "flex") ||
+                (index % 2 !== 0 && "flex-row-reverse")
+              }`}
+              key={item.id}
+            >
               <h1 className="text-8xl font-bold text-[#4F616D]">
                 0{item.number}
               </h1>
