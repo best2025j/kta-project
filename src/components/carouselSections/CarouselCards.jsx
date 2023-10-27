@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "animate.css";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
+import { Link } from "react-router-dom";
 
-const CarouselCards = () => {
+const CarouselCards = ({ children }) => {
   const staffData = [
     {
       svg: "",
@@ -58,11 +59,11 @@ const CarouselCards = () => {
                 </div>
 
                 {hoveredIndex === index && (
-                  <div className="absolute animate__animated animate__zoomIn delay-120 ease-in-out duration-100 inset-y-24 flex justify-center items-center h-full w-[500px]">
+                  <div className="absolute animate__animated animate__zoomIn delay-120 ease-in-out duration-100 inset-y-20 flex justify-center items-center h-full w-[500px]">
                     <img
                       src={item.fullImage}
                       alt=""
-                      className="h-[600px] w-full"
+                      className="h-[620px] w-full"
                     />
                   </div>
                 )}
@@ -76,15 +77,18 @@ const CarouselCards = () => {
         </div>
       </div>
 
-      <div className="flex justify-center relative">
-        <ButtonWhite
-          className={"absolute -top-28 flex items-center"}
-          label={
-            <>
-              View all courses <ViewAllCourseIcon />
-            </>
-          }
-        />
+      <div className="py-6 flex items-center justify-center ">
+        <Link to={`/courses`}>
+          {/* Use Link for navigation */}
+          <ButtonWhite
+            className={"flex items-center text-base text-center justify-center"}
+            label={
+              <>
+                View Courses <ViewAllCourseIcon />
+              </>
+            }
+          />
+        </Link>
       </div>
     </div>
   );

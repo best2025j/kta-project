@@ -3,16 +3,17 @@ import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const courseData = [
     {
       id: 1,
+      name: "web-development",
       number: 1,
       image: "/webDev.png",
       course: "Web Development",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
@@ -21,83 +22,89 @@ const Courses = () => {
 
     {
       id: 2,
+      name: "Design_Animation",
       number: 2,
       image: "/Designs.png",
       course: "Design/ Animation",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
       InstructorName: "Mr Victor",
     },
+
     {
       id: 3,
+      name: "UI_UXDesign",
       number: 3,
       image: "/UI.png",
       course: "UI/UX Design",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2 months",
       Instructor: "Instructor",
       InstructorName: "Mr victor",
     },
+
     {
       id: 4,
+      name: "Data_Analytics",
       number: 4,
       image: "/DataSciences.png",
       course: "Data & Analytics",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
+
     {
       id: 5,
+      name: "Cybersecurity",
       number: 5,
       image: "/CyberSecuritys.png",
       course: "Cybersecurity",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
+
     {
       id: 6,
+      name: "Virtual-Assistance-and-Remote-Jobs",
       number: 6,
       image: "/VirtualRemoteJob.png",
       course: "Virtual Assistance and Remote Jobs",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
+
     {
       id: 7,
+      name: "DigitalMarketing",
       number: 7,
       image: "/DMarketting.png",
       course: "Digital Marketing",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
+
     {
       id: 8,
+      name: "ContentWriting",
       number: 8,
       image: "/CopyWritting.png",
       course: "Content Writing",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
-      name: "Duration",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
@@ -156,16 +163,19 @@ const Courses = () => {
                 </div>
 
                 <div className="py-6 flex items-center justify-center ">
-                  <ButtonWhite
-                    className={
-                      "flex items-center text-base text-center justify-center"
-                    }
-                    label={
-                      <>
-                        View Courses <ViewAllCourseIcon />
-                      </>
-                    }
-                  />
+                  {/* Use Link for navigation */}
+                  <Link to={`/course/${item.name}`}>
+                    <ButtonWhite
+                      className={
+                        "flex items-center text-base text-center justify-center"
+                      }
+                      label={
+                        <>
+                          View Courses <ViewAllCourseIcon />
+                        </>
+                      }
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
