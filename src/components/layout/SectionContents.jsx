@@ -10,7 +10,7 @@ const SectionContents = () => {
       <div className="absolute left-0 right-0 space-y-4 text-center justify-center flex flex-col">
         <h1 className="text-5xl font-bold">Let’s start your tech journey</h1>
         <div className="py-6 flex items-center justify-center ">
-          <Link to={`/courses`}>
+          <Link to="/courses">
             {/* Use Link for navigation */}
             <ButtonWhite
               className={
@@ -25,7 +25,7 @@ const SectionContents = () => {
           </Link>
         </div>
       </div>
-      <img src="KTA. logo (2).png" alt="" />
+      <img src="KTA.logo(2).png" alt="" />
     </div>
   );
 };

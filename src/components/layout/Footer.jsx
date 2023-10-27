@@ -39,6 +39,7 @@ const Footer = () => {
               enthusiasts through education that is who we are and that is what
               we do!"
             </p>
+            
             <div className="py-6">
               <ButtonWhite
                 className={
