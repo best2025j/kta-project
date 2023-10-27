@@ -8,11 +8,13 @@ const WebDevelopment = () => {
   // Access the 'id' parameter from the route
 
   return (
-    <div className="pt-40">
-      <h1>Course Name: {name}</h1>
+    <>
+      <div className="pt-40">
+        <h1>Course Name: {name}</h1>
+      </div>
       <SectionContents />
       <Footer />
-    </div>
+    </>
   );
 };
 
