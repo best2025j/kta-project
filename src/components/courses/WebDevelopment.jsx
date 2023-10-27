@@ -39,7 +39,7 @@ const WebDevelopment = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col space-y-2 pt-[48px]">
           <div className="flex justify-between">
             <h1 className="text-[#00AFF0] font-bold text-[30px]">
               Front-end Development
