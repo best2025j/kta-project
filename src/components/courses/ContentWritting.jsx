@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../layout/Footer";
 import SectionContents from "../layout/SectionContents";

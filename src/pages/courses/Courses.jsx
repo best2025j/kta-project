@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
@@ -118,8 +118,8 @@ const Courses = () => {
         <div className="space-y-3 px-6">
           <h1 className="text-5xl font-bold">Courses</h1>
           <p className="text-lg font-thin">
-            Unlock Your Potential with Kwaratech Academy's Diverse Range of Tech
-            Courses
+            Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
+            Tech Courses
           </p>
         </div>
 
