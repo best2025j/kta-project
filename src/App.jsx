@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Courses from "./pages/courses/Courses";
 import Services from "./pages/services/Services";
