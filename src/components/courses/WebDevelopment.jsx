@@ -1,5 +1,3 @@
-import React from "react";
-import { useParams } from "react-router-dom";
 import SectionContents from "../layout/SectionContents";
 import Footer from "../layout/Footer";
 import image from "../../assets/images/webImage.png";
@@ -7,18 +5,15 @@ import ButtonWhite from "../Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 
 const WebDevelopment = () => {
-  // Access the 'id' parameter from the route
-  const { name } = useParams();
+  // Access the &apos;id&apos; parameter from the route
 
   return (
     <>
       <div className="py-40 px-[80px]">
-        <h1 className="text-[48px] font-bold">
-          Course Name: <span className="text-2xl capitalize">{name}</span>
-        </h1>
+        <h1 className="text-[48px] font-bold">Courses</h1>
         <p className="text-base font-normal text-[#4F616D]">
-          Unlock Your Potential with Kwaratech Academy's Diverse Range of Tech
-          Courses
+          Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
+          Tech Courses
         </p>
 
         <div className="pt-14 h-full">
@@ -51,11 +46,11 @@ const WebDevelopment = () => {
 
           <div className=" text-[#4F616D] ">
             <h1>
-              In our Front-End Development course, you'll master the art of
-              creating user-friendly and visually appealing websites. Here's
-              what you can expect to learn:
+              In our Front-End Development course, you&apos;ll master the art of
+              creating user-friendly and visually appealing websites.
+              Here&apos;s what you can expect to learn:
             </h1>
-            <ul class="list-disc list-inside text-[18px] font-normal">
+            <ul className="list-disc list-inside text-[18px] font-normal">
               <li>
                 HTML & CSS: Dive into the fundamentals of web development with
                 HTML and CSS. Learn how to structure web pages and apply styling
@@ -117,10 +112,10 @@ const WebDevelopment = () => {
             <h1>What You Will Learn:</h1>
             <h1>
               Our Back-End Development course equips you with the skills to
-              create robust server-side systems and manage databases. Here's
-              what you'll learn:
+              create robust server-side systems and manage databases.
+              Here&apos;s what you&apos;ll learn:
             </h1>
-            <ul class="list-disc list-inside text-[18px] font-normal">
+            <ul className="list-disc list-inside text-[18px] font-normal">
               <li>
                 Server-Side Scripting: Dive into server-side scripting languages
                 like Node.js or Python to build the back-end logic of web
