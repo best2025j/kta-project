@@ -145,7 +145,7 @@ const Courses = () => {
                   }
                 />
 
-                <div className="flex p-4 items-center justify-between">
+                <div className="flex p-4 pt-[40px] items-center justify-between">
                   <div className="w-[439px] space-y-4">
                     <h1 className="text-5xl font-bold">{item.course}</h1>
                     <p>{item.info}</p>
