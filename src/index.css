@@ -3,6 +3,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
 /* Add this CSS to your stylesheet */
 .relative {
   transition: transform 0.3s ease-in-out;
