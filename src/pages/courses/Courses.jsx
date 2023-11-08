@@ -74,7 +74,7 @@ const Courses = () => {
 
     {
       id: 6,
-      name: "Virtual-Assistance-and-Remote-Jobs",
+      name: "va-remote-jobs",
       number: 6,
       image: "/VirtualRemoteJob.png",
       course: "Virtual Assistance and Remote Jobs",
@@ -87,7 +87,7 @@ const Courses = () => {
 
     {
       id: 7,
-      name: "DigitalMarketing",
+      name: "digital-marketing",
       number: 7,
       image: "/DMarketting.png",
       course: "Digital Marketing",

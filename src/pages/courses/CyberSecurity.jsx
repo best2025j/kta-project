@@ -43,10 +43,10 @@ const CyberSecurity = () => {
         <div className="flex flex-col space-y-2 pt-[48px]">
           <div className="flex justify-between">
             <h1 className="text-[#00AFF0] font-bold text-[30px]">
-              Data Analysis
+              Cybersecurity
             </h1>
             <span className="text-[#001E2D] font-[600] text-[28px]">
-              Duration: 2 months
+              Duration: 3 months
             </span>
           </div>
 
