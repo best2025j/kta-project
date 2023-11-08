@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import image from "../../assets/images/kwaraTech.jpg";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";
@@ -14,13 +14,14 @@ const Header = () => {
   const handleClose = () => setNav(!nav);
 
   const location = useLocation();
+  
   const isActiveLink = (path) => {
     return location.pathname === path;
   };
 
-
   const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
-  const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
+  // Added 'active-link' class
+  const activeLink = inactiveLink + " text-[#00AFF0]"; 
 
   return (
     <div
@@ -34,7 +35,7 @@ const Header = () => {
         <Link href="#">
           <img
             src={image}
-            quality={100}
+            // quality={100}
             alt="/"
             width="110px"
             height="128px"

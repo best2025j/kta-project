@@ -15,7 +15,6 @@ import DigitalMarketting from "./pages/courses/DigitalMarketting";
 import ContentWritting from "./pages/courses/ContentWritting";
 import UI_UX from "./pages/courses/UI_UX";
 
-
 const App = () => {
   return (
     <Router>
