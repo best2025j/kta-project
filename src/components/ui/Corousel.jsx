@@ -17,7 +17,7 @@ const Carousel = () => {
   return (
     <section>
       <div className="h-full w-[85%] mx-auto sm:mx-0 sm:w-full">
-        <div className="md:rounded-[50%] relative top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
+        <div className="h-[80px] rounded-[50%] relative top-[50px] md:top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
 
         <div className="hidden lg:grid grid-cols-3 lg:grid-cols-5">
           {staffData.map((image, index) => (
@@ -49,7 +49,7 @@ const Carousel = () => {
           ))}
         </div>
 
-        <div className="md:rounded-[50%] relative -top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
+        <div className="h-[80px] rounded-[50%] relative -top-[50px] md:-top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
       </div>
     </section>
   );
