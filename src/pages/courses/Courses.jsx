@@ -35,7 +35,7 @@ const Courses = () => {
 
     {
       id: 3,
-      name: "UI_UXDesign",
+      name: "ui-ux",
       number: 3,
       image: "/UI.png",
       course: "UI/UX Design",
@@ -48,7 +48,7 @@ const Courses = () => {
 
     {
       id: 4,
-      name: "Data_Analytics",
+      name: "data-analytics",
       number: 4,
       image: "/DataSciences.png",
       course: "Data & Analytics",
@@ -61,7 +61,7 @@ const Courses = () => {
 
     {
       id: 5,
-      name: "Cybersecurity",
+      name: "cyber-security",
       number: 5,
       image: "/CyberSecuritys.png",
       course: "Cybersecurity",
