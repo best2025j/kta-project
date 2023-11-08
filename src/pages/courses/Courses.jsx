@@ -22,7 +22,7 @@ const Courses = () => {
 
     {
       id: 2,
-      name: "Design_Animation",
+      name: "design-animation",
       number: 2,
       image: "/Designs.png",
       course: "Design/ Animation",
@@ -164,7 +164,7 @@ const Courses = () => {
 
                 <div className="py-6 flex items-center justify-center ">
                   {/* Use Link for navigation */}
-                  <Link to={`/course/${item.name}`}>
+                  <Link to={`/courses/${item.name}`}>
                     <ButtonWhite
                       className={
                         "flex items-center text-base text-center justify-center"
