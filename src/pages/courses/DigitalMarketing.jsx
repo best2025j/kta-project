@@ -1,33 +1,32 @@
 // import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import SectionContents from "../../components/layout/SectionContents";
 import Footer from "../../components/layout/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//cyber.png";
 
-const CyberSecurity = () => {
+const DigitalMarketing = () => {
+  const { name } = useParams();
   // Access the 'id' parameter from the route
 
   return (
     <>
       <div className="py-40 px-[80px]">
-        <h1 className="text-[48px] font-bold">Courses</h1>
+        <h1 className="text-[48px] font-bold">Courses{name}</h1>
         <p className="text-base font-normal text-[#4F616D]">
-          Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
+          Unlock Your Potential with Kwara-tech Academy&apos;s Diverse Range of
           Tech Courses
-        </p>
-
+        </p>{" "}
         {/* Added a "Back to Courses" button using the Link component */}
         <Link to="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
-
         <div className="pt-14 h-full">
           <img src={image} alt="no image" />
           <div className="flex justify-between px-2 py-[40px] bg-white">
             <div className="space-y-4 w-[439px]">
-              <h1 className="font-bold text-[48px]">Cybersecurity </h1>
+              <h1 className="font-bold text-[48px]">Digital Marketing </h1>
               <p className="text-base font-normal text-[#4F616D]">
                 Learn to protect digital assets from cyber threats with
                 comprehensive training in cybersecurity.
@@ -35,15 +34,14 @@ const CyberSecurity = () => {
             </div>
             <div className="space-y-4">
               <h1 className="font-bold text-[36px]">Instructor</h1>
-              <span>Mr Adeniyi</span>
+              <span>Mr Azeez</span>
             </div>
           </div>
         </div>
-
         <div className="flex flex-col space-y-2 pt-[48px]">
           <div className="flex justify-between">
             <h1 className="text-[#00AFF0] font-bold text-[30px]">
-              Cybersecurity
+              Digital Marketing{" "}
             </h1>
             <span className="text-[#001E2D] font-[600] text-[28px]">
               Duration: 3 months
@@ -63,7 +61,7 @@ const CyberSecurity = () => {
                 intuitive digital experiences.
               </li>
               <li>
-                Understand user research, wireframing, prototyping, and
+                Understand user research, wire framing, prototyping, and
                 usability testing.
               </li>
 
@@ -78,7 +76,7 @@ const CyberSecurity = () => {
                 and accessibility.
               </li>
               <li>
-                Wireframing and Prototyping: Create visual blueprints and
+                Wire framing and Prototyping: Create visual blueprints and
                 interactive prototypes.
               </li>
               <li>
@@ -117,4 +115,4 @@ const CyberSecurity = () => {
   );
 };
 
-export default CyberSecurity;
+export default DigitalMarketing;

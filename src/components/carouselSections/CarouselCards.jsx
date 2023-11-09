@@ -1,27 +1,27 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "animate.css";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import { Link } from "react-router-dom";
 
-const CarouselCards = ({ children }) => {
+const CarouselCards = () => {
   const staffData = [
     {
       svg: "",
       thumbnail: "/Courses card for html.png",
-      fullImage: "/frontendfull.png",
+      fullImage: "/frontend-full.png",
     },
     {
       thumbnail: "/Courses card for html (1).png",
-      fullImage: "/backendfull.png",
+      fullImage: "/backend-full.png",
     },
     {
       thumbnail: "/Courses card for html (2).png",
-      fullImage: "/designfull.png",
+      fullImage: "/design-full.png",
     },
     {
       thumbnail: "/Courses card for html (3).png",
-      fullImage: "/datasciencefull.png",
+      fullImage: "/dataScience-full.png",
     },
   ];
 
@@ -29,16 +29,16 @@ const CarouselCards = ({ children }) => {
 
   return (
     <div className="w-full h-full">
-      <div className="ml-32 py-32 space-y-[110px]">
+      <div className="ml-8 px-4 md:ml-32 py-32 space-y-[110px]">
         <div className="h-full w-full space-y-3">
           <h1 className="sm:text-5xl text-xl font-bold">Explore our courses</h1>
           <div className="max-w-[480px]">
-            <p className="text-[#4F616D] text-base">
+            <p className="text-[#4F616D] md:text-base text-xs">
               At KTA, we offer a diverse range of tech courses that cater to
               beginners and experts alike. From web development to data science,
               our curriculum is designed to equip you with practical skills that
-              matter in today's tech-driven world. Join us on this educational
-              journey and unlock your potential.
+              matter in today&apos;s tech-driven world. Join us on this
+              educational journey and unlock your potential.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const CarouselCards = ({ children }) => {
             ))}
           </div>
 
-          <div className="pr-6">
+          <div className="pr-6 hidden md:flex">
             <img src="/KTA.png" alt="" />
           </div>
         </div>

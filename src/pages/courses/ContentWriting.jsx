@@ -1,9 +1,9 @@
 // import React from "react";
 import { useParams } from "react-router-dom";
-import SectionContents from "../../components/layout/SectionContents";
 import Footer from "../../components/layout/Footer";
+import SectionContents from "../../components/layout/SectionContents";
 
-const DigitalMarketting = () => {
+const ContentWriting = () => {
   const { name } = useParams();
   // Access the 'id' parameter from the route
 
@@ -16,4 +16,4 @@ const DigitalMarketting = () => {
   );
 };
 
-export default DigitalMarketting;
+export default ContentWriting;

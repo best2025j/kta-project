@@ -11,8 +11,8 @@ import DesignAnimation from "./pages/courses/DesignAnimation";
 import DataAnalytics from "./pages/courses/DataAnalytics";
 import CyberSecurity from "./pages/courses/CyberSecurity";
 import VA_RemoteJobs from "./pages/courses/VA_RemoteJobs";
-import DigitalMarketting from "./pages/courses/DigitalMarketting";
-import ContentWritting from "./pages/courses/ContentWritting";
+import DigitalMarketing from "./pages/courses/DigitalMarketing";
+import ContentWriting from "./pages/courses/ContentWriting";
 import UI_UX from "./pages/courses/UI_UX";
 
 const App = () => {
@@ -31,9 +31,9 @@ const App = () => {
         <Route path="/courses/va-remote-jobs" element={<VA_RemoteJobs />} />
         <Route
           path="/courses/digital-marketing"
-          element={<DigitalMarketting />}
+          element={<DigitalMarketing />}
         />
-        <Route path="/courses/content-writing" element={<ContentWritting />} />
+        <Route path="/courses/content-writing" element={<ContentWriting />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />

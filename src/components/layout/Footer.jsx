@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import images from "../../assets/images/KTA. logo.png";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
-import fb from "../../assets/svgs/facebooklogo.svg";
+// import fb from "../../assets/svgs/facebooklogo.svg";
 import ig from "../../assets/svgs/ig.svg";
 import Twitter from "../../assets/svgs/Twitterlogo.svg";
 import whatsapp from "../../assets/svgs/whatsapp.svg";
@@ -14,7 +14,7 @@ const Footer = () => {
   const [nav, setNav] = useState(false);
   // Function to handle menu icon click
 
-  const handClick = () => setNav(!nav);
+  // const handClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
   const location = useLocation();
@@ -26,21 +26,21 @@ const Footer = () => {
   const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
 
   return (
-    <div className="bg-[#001E2D] py-40 text-white w-full h-[620px]">
+    <div className="bg-[#001E2D] md:py-40 py-6 text-white w-full md:h-[620px]">
       <div className="w-[90%] mx-auto space-y-6">
         <div className="flex justify-between items-center">
-          <div>
+          <div className="md:flex hidden">
             <img src={images} alt="" />
           </div>
 
-          <div className="w-[456px]">
-            <p className=" text-2xl">
-              “Aim for the top with Kwara Tech Academy, empowering tech
+          <div className="md:w-[456px]">
+            <p className="md:text-2xl text-xs">
+              &quot; Aim for the top with Kwara Tech Academy, empowering tech
               enthusiasts through education that is who we are and that is what
-              we do!"
+              we do!&quot;
             </p>
-            
-            <div className="py-6">
+
+            <div className="py-6 items-center flex md:block justify-center">
               <ButtonWhite
                 className={
                   "flex items-center text-base text-center justify-center"
@@ -56,7 +56,9 @@ const Footer = () => {
         </div>
 
         <div className="flex-col px-2 py-4 m-auto justify-between items-center sm:flex-row border-b flex text-center text-gray-500">
-          <h3>We also write here at KTA check out our blogs.</h3>
+          <h3 className="hidden md:flex">
+            We also write here at KTA check out our blogs.
+          </h3>
 
           <div className="flex space-x-5 justify-end items-center sm:w-[360px] pt-4 text-2xl cursor-pointer">
             <Link href="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==">
@@ -98,28 +100,39 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between">
-          <h6>© 2023 KTA. All rights reserved.</h6>
-          <ul className="flex space-x-16 text-sm">
-            <li className={isActiveLink("/") ? activeLink : inactiveLink}>
+        <div className="md:flex space-y-4 justify-between">
+          <h6 className="text-center">© 2023 KTA. All rights reserved.</h6>
+          <ul className="md:flex hidden space-x-4 md:space-x-16 text-sm">
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/") ? activeLink : inactiveLink}
+            >
               <NavLink exact="true" to="/">
                 Home
               </NavLink>
             </li>
             <li
+              onClick={handleClose}
               className={isActiveLink("/courses") ? activeLink : inactiveLink}
             >
               <NavLink to="/courses">Courses</NavLink>
             </li>
             <li
+              onClick={handleClose}
               className={isActiveLink("/services") ? activeLink : inactiveLink}
             >
               <NavLink to="/services">Services</NavLink>
             </li>
-            <li className={isActiveLink("/about") ? activeLink : inactiveLink}>
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/about") ? activeLink : inactiveLink}
+            >
               <NavLink to="/about">About</NavLink>
             </li>
-            <li className={isActiveLink("/blog") ? activeLink : inactiveLink}>
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/blog") ? activeLink : inactiveLink}
+            >
               <NavLink to="/blog">Blog</NavLink>
             </li>
           </ul>
