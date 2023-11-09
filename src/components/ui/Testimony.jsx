@@ -23,8 +23,12 @@ const Testimony = () => {
           <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 self-stretch space-y-3 text-justify">
             <img src="/semi.png" alt="" />
             <h1 className="md:text-lg text-sm">
-              &quot;I can&apos;t thank Kwaratech Academy enough for their
-              top-notch tech courses.
+              &quot;I can't thank Kwaratech Academy enough for their top-notch
+              tech courses. As a web developer, I needed to upskill in various
+              areas, and KTA had the perfect courses for me. The hands-on
+              experience and expert guidance were invaluable. I've not only
+              improved my skills but also landed a new job in a top tech
+              company. KTA is a game-changer!&quot;
             </h1>
             <h5 className="flex justify-end py-4">Emmanuel Osai</h5>
           </div>
@@ -38,70 +42,50 @@ const Testimony = () => {
         className="relative w-full bg-black text-slate-400"
         data-carousel="slide"
       >
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <h1 className="md:text-lg text-sm">
-              &quot;I can&apos;t thank Kwaratech Academy enough for their
-              top-notch tech courses.
-            </h1>
-          </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <h1 className="md:text-lg text-sm">
-              &quot;I can&apos;t thank Kwaratech Academy enough for their
-              top-notch tech courses.
-            </h1>
-          </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <h1 className="md:text-lg text-sm">
-              &quot;I can&apos;t thank Kwaratech Academy enough for their
-              top-notch tech courses.
-            </h1>
-          </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <h1 className="md:text-lg text-sm">
-              &quot;I can&apos;t thank Kwaratech Academy enough for their
-              top-notch tech courses.
-            </h1>
-          </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <h1 className="md:text-lg text-sm">
+        <div className="relative h-56 overflow-hidden rounded-lg md:h-96 mx-auto flex w-full items-center justify-center">
+          <div
+            className=" duration-700 ease-in-out"
+            data-carousel-item
+          >
+            <h1 className="text-center md:text-lg text-sm">
               &quot;I can&apos;t thank Kwaratech Academy enough for their
               top-notch tech courses.
             </h1>
           </div>
         </div>
+
         <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
           <button
             type="button"
-            className="w-3 h-3 rounded-full"
+            className="w-3 h-3 rounded-full bg-white"
             aria-current="true"
             aria-label="Slide 1"
             data-carousel-slide-to="0"
           ></button>
           <button
             type="button"
-            className="w-3 h-3 rounded-full"
+            className="w-3 h-3 rounded-full bg-white"
             aria-current="false"
             aria-label="Slide 2"
             data-carousel-slide-to="1"
           ></button>
           <button
             type="button"
-            className="w-3 h-3 rounded-full"
+            className="w-3 h-3 rounded-full bg-white"
             aria-current="false"
             aria-label="Slide 3"
             data-carousel-slide-to="2"
           ></button>
           <button
             type="button"
-            className="w-3 h-3 rounded-full"
+            className="w-3 h-3 rounded-full bg-white"
             aria-current="false"
             aria-label="Slide 4"
             data-carousel-slide-to="3"
           ></button>
           <button
             type="button"
-            className="w-3 h-3 rounded-full"
+            className="w-3 h-3 rounded-full bg-white"
             aria-current="false"
             aria-label="Slide 5"
             data-carousel-slide-to="4"
