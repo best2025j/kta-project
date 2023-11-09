@@ -1,5 +1,6 @@
 // import React from "react";
 
+
 const Testimony = () => {
   return (
     <div className=" bg-[#fff] text-white h-full py-10 ">
@@ -34,6 +35,7 @@ const Testimony = () => {
           </div>
         </div>
       </div>
+    
     </div>
   );
 };
