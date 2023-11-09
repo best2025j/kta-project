@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const CarouselCards = () => {
   const staffData = [
     {
-      svg: "",
       thumbnail: "/Courses card for html.png",
       fullImage: "/frontend-full.png",
     },
@@ -55,7 +54,11 @@ const CarouselCards = () => {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div className="image-container">
-                  <img src={item.thumbnail} alt="" />
+                  <img
+                    src={item.thumbnail}
+                    alt=""
+                    className="md:w-full md:h-full w-full h-96"
+                  />
                 </div>
 
                 {hoveredIndex === index && (
