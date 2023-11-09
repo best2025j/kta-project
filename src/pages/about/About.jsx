@@ -1,43 +1,50 @@
 // import React from "react";
+import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 
 const About = () => {
   return (
     <>
-      <div className="flex items-center justify-center h-full w-full mx-auto ">
-        <div className="py-40 space-y-[20px]">
-          <h1 className="font-bold text-[48px]">About Us</h1>
-          <p className="w-[439px]">
-            At Kwaratech Academy, we believe that technology has the power to
-            transform lives, open doors to opportunities, and unlock the
-            potential within every individual. Our journey began with a simple
-            yet profound vision: to make quality tech education accessible to
-            all.
-          </p>
-        </div>
-        <div className="flex flex-col">
-          <img src="" alt="pix" />
-          <div className="flex">
-            <img src="" alt="pix 1" />
-            <img src="" alt="pix 2" />
+      <div className="py-28 px-[60px]">
+        <div className="flex items-center justify-center h-full w-full mx-auto ">
+          <div className="py-40 space-y-[20px]">
+            <h1 className="font-bold text-[48px]">About Us</h1>
+            <p className="w-[439px]">
+              At Kwaratech Academy, we believe that technology has the power to
+              transform lives, open doors to opportunities, and unlock the
+              potential within every individual. Our journey began with a simple
+              yet profound vision: to make quality tech education accessible to
+              all.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-[38px]">
+            <img src="/booksLab.png" alt="pix" />
+
+            <div className="flex py-4 space-x-6 ">
+              <img src="/schoolBoy.png" alt="pix 1" />
+              <img src="/adult.png" alt="pix 2" />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="space-y-4 flex flex-col justify-center items-center mx-auto text-center">
+      <div className="space-y-4 flex flex-col justify-center items-center mx-auto text-center px-[112px]">
         <h1 className="font-bold text-[48px]">Who We Are</h1>
         <p className="w-[430px] text-md font-normal">
           We are a passionate team of educators, innovators, and tech
           enthusiasts dedicated to bridging the digital gap.
         </p>
-        <img src="" alt="pix-4" />
+        <div className="pt-[60px]">
+          <img src="/vid.png" alt="pix-4" />
+        </div>
       </div>
 
-      <div className="flex justify-between">
-        <div className="gap-[48px] inline-flex flex-col border py-10">
+      <div className="flex justify-between pl-[112px]">
+        <div className="gap-[48px] inline-flex flex-col py-[120px]">
           <h1 className="font-bold text-[48px]">What We Stand For</h1>
-          <div className="flex flex-col gap-24 text-start">
+          <div className="flex flex-col gap-24 text-start px-4">
             <div className="flex">
               <div>
                 <div>
@@ -59,7 +66,8 @@ const About = () => {
                     />
                   </svg>
                 </div>
-                <h1 className="font-bold text-[48px]">Inclusivity</h1>
+
+                <h1 className="font-bold text-[36px]">Inclusivity</h1>
                 <p className="w-[321px]">
                   We welcome learners from all walks of life, irrespective of
                   age, background, or experience.
@@ -97,10 +105,10 @@ const About = () => {
                     </defs>
                   </svg>
                 </div>
-                <h1 className="font-bold text-[48px]">Inclusivity</h1>
+                <h1 className="font-bold text-[36px]">Quality Education</h1>
                 <p className="w-[321px]">
-                  We welcome learners from all walks of life, irrespective of
-                  age, background, or experience.
+                  We are committed to providing high-quality, industry-relevant
+                  tech education.
                 </p>
               </div>
             </div>
@@ -138,10 +146,10 @@ const About = () => {
                     </defs>
                   </svg>
                 </div>
-                <h1 className="font-bold text-[48px]">Inclusivity</h1>
+                <h1 className="font-bold text-[36px]">Innovation</h1>
                 <p className="w-[321px]">
-                  We welcome learners from all walks of life, irrespective of
-                  age, background, or experience.
+                  We stay at the forefront of technological advancements to
+                  offer cutting-edge programs.
                 </p>
               </div>
 
@@ -191,19 +199,66 @@ const About = () => {
                     </defs>
                   </svg>
                 </div>
-                <h1 className="font-bold text-[48px]">Inclusivity</h1>
+                <h1 className="font-bold text-[36px]">Community</h1>
                 <p className="w-[321px]">
-                  We welcome learners from all walks of life, irrespective of
-                  age, background, or experience.
+                  We foster a supportive community where learners can connect,
+                  collaborate, and grow together.
                 </p>
               </div>
             </div>
           </div>
         </div>
+
         <div>
-          <img src="" alt="kta" />
+          <img src="/KTA2.png" alt="kta" />
         </div>
       </div>
+
+      <div className="py-[64px] px-[112px] space-y-6">
+        <div className="w-[439px]">
+          <h1 className="font-bold text-[36px]">Our Vision</h1>
+          <p className="text-lg">
+            We envision a world where technology is a tool for empowerment,
+            where opportunities are boundless, and where every individual can
+            reach their full potential. With this vision as our guiding star, we
+            are dedicated to making a positive impact on lives through
+            technology education.
+          </p>
+        </div>
+
+        <div className="flex justify-between space-x-4">
+          <div>
+            <img src="/vr.png" alt="img1" />
+          </div>
+          <div>
+            <img src="/groupPix.png" alt="img2" />
+          </div>
+          <div>
+            <img src="/smile.png" alt="img3" />
+          </div>
+          <div>
+            <img src="ladiesSmile.png" alt="img4" />
+          </div>
+        </div>
+
+        <div className="flex justify-between items-center py-20">
+          <div className="w-[439px] space-y-4">
+            <h1 className="font-bold text-[48px]">Begin your career</h1>
+            <p>
+              Whether you&apos;re a student taking your first steps into the
+              tech world or a professional seeking to upskill, Kwaratech Academy
+              is here to guide you. We invite you to be a part of our vibrant
+              and growing community, where dreams are empowered and futures are
+              shaped.
+            </p>
+            <ButtonWhite label="Get Started" />
+          </div>
+          <div>
+            <img src="/ktaSvg.png" alt="" />
+          </div>
+        </div>
+      </div>
+
       <SectionContents />
       <Footer />
     </>
