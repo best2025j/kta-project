@@ -43,7 +43,7 @@ const Header = () => {
           />
         </Link>
 
-        {/* destop view Navigation links */}
+        {/* desktop view Navigation links */}
         <ul className="hidden md:flex capitalize space-x-6">
           <li className={isActiveLink("/") ? activeLink : inactiveLink}>
             <NavLink exact="true" to="/">
@@ -84,7 +84,7 @@ const Header = () => {
       </div>
 
       {/* modal */}
-      {/* MOBILE VEIW */}
+      {/* MOBILE view */}
 
       <div
         // backdrop color

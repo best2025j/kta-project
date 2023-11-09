@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 const Instructors = () => {
   const staffData = [
@@ -39,11 +39,12 @@ const Instructors = () => {
   return (
     <div className="w-full h-full py-10 flex flex-col items-center mx-auto ">
       <div className=" inline-flex flex-col items-start max-w-[1200px]">
-        <div className="w-[535px] space-y-5">
-          <h1 className="text-5xl font-bold">Meet Our Instructors</h1>
+        <div className="w-[294px] md:w-[535px] space-y-5">
+          <h1 className="md:text-5xl text-2xl font-bold">Meet Our Instructors</h1>
           <p className="text-md">
             Our expert instructors are industry leaders with a wealth of
-            knowledge and experience. They're dedicated to helping you succeed.
+            knowledge and experience. They&apos;re dedicated to helping you
+            succeed.
           </p>
         </div>
 

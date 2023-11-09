@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import CoWorkingSpacesSVG from "../icons/CoWorkingSpacesSVG";
 import EssentialICTTrainingSVG from "../icons/EssentialICTTrainingSVG";
 import SpecializedProgrammesSVG from "../icons/SpecializedProgrammesSVG";
@@ -10,7 +10,7 @@ const Sections = () => {
       svg: <CoWorkingSpacesSVG />,
       headings: "Co-working spaces",
       paragraph:
-        "With 24 hours electricity and power supply our co-working space is more than just a place to work; it's a collaborative hub.",
+        "With 24 hours electricity and power supply our co-working space is more than just a place to work; it&apos;s a collaborative hub.",
     },
     {
       svg: <EssentialICTTrainingSVG />,
@@ -22,18 +22,21 @@ const Sections = () => {
       svg: <SpecializedProgrammesSVG />,
       headings: "Specialized Programmes",
       paragraph:
-        "Our specialized programs, like Tech4Kopa and Tech4Women, are designed to empower individuals and communities.",
+        "Our specialized programs, like Tech4copper and Tech4Women, are designed to empower individuals and communities.",
     },
   ];
 
   return (
-    <div className="py-40 bg-[#ffffff] px-14">
+    <div className="py-20 bg-[#ffffff] px-14">
       <div className="space-y-[16px]">
-        <h1 className="text-5xl font-bold"> What we have to offer</h1>
-        <p className="text-lg font-normal text-[#4F616D] w-[480px]">
-          At Kwaratech Academy, we're not just another tech education provider;
-          we're your partner in unlocking a world of opportunities, and here is
-          why you should choose us.
+        <h1 className="md:text-5xl font-bold text-[24px]">
+          {" "}
+          What we have to offer
+        </h1>
+        <p className="text-lg font-normal text-[#4F616D] w-[294px] md:w-[480px]">
+          At Kwaratech Academy, we&apos;re not just another tech education
+          provider; we&apos;re your partner in unlocking a world of
+          opportunities, and here is why you should choose us.
         </p>
       </div>
 
@@ -44,7 +47,9 @@ const Sections = () => {
             key={index}
           >
             <div>{item.svg}</div>
-            <h1 className="font-bold text-4xl w-[288px]">{item.headings}</h1>
+            <h1 className="font-bold text-[24px] md:text-4xl w-[288px]">
+              {item.headings}
+            </h1>
             <p className="text-md py-[16px]">{item.paragraph}</p>
           </div>
         ))}

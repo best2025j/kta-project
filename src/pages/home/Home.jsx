@@ -1,5 +1,5 @@
-import React from "react";
-import Corousel from "../../components/ui/Corousel";
+// import React from "react";
+import Carousel from "../../components/ui/Carousel";
 import Hero from "../../components/ui/Hero";
 import OutSponsors from "../../components/ui/OutSponsors";
 import Sections from "../../components/sections/Sections";
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Corousel />
+      <Carousel />
       <OutSponsors />
       <CarouselCards />
       <Sections />

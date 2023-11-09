@@ -1,8 +1,8 @@
-import React, { Children, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "./Header";
 
-const Navigation = ({ children }) => {
+const Navigation = () => {
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(true);
 
@@ -10,11 +10,7 @@ const Navigation = ({ children }) => {
     setIsVisible(location.pathname !== "/");
   }, [location]);
 
-  return (
-    <Header className={`p-4 ${isVisible ? "block" : "hidden"}`}>
-      {children}
-    </Header>
-  );
+  return <Header className={`p-4 ${isVisible ? "block" : "hidden"}`} />;
 };
 
 export default Navigation;

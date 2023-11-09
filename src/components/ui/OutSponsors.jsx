@@ -12,7 +12,7 @@ const OutSponsors = () => {
   return (
     <section>
       <div className="h-full w-full justify-center mx-auto sm:mx-0 sm:w-full">
-        <div className="flex w-full items-center justify-center">
+        <div className="grid grid-cols-3 lg:grid-0 lg:flex w-full items-center justify-center">
           {staffData.map((image, index) => (
             <div
               key={index}

@@ -6,8 +6,7 @@ import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//cyber.png";
 
-
-const DigitalMarketting = () => {
+const DigitalMarketing = () => {
   const { name } = useParams();
   // Access the 'id' parameter from the route
 
@@ -16,7 +15,7 @@ const DigitalMarketting = () => {
       <div className="py-40 px-[80px]">
         <h1 className="text-[48px] font-bold">Courses{name}</h1>
         <p className="text-base font-normal text-[#4F616D]">
-          Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
+          Unlock Your Potential with Kwara-tech Academy&apos;s Diverse Range of
           Tech Courses
         </p>{" "}
         {/* Added a "Back to Courses" button using the Link component */}
@@ -62,7 +61,7 @@ const DigitalMarketting = () => {
                 intuitive digital experiences.
               </li>
               <li>
-                Understand user research, wireframing, prototyping, and
+                Understand user research, wire framing, prototyping, and
                 usability testing.
               </li>
 
@@ -77,7 +76,7 @@ const DigitalMarketting = () => {
                 and accessibility.
               </li>
               <li>
-                Wireframing and Prototyping: Create visual blueprints and
+                Wire framing and Prototyping: Create visual blueprints and
                 interactive prototypes.
               </li>
               <li>
@@ -116,4 +115,4 @@ const DigitalMarketting = () => {
   );
 };
 
-export default DigitalMarketting;
+export default DigitalMarketing;

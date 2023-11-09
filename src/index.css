@@ -45,6 +45,6 @@ body {
 
 @layer base {
   body {
-    @apply dark:bg-black bg-[#FBFCFF] font-sans;
+    @apply dark:bg-black bg-[#FBFCFF] font-sans w-full;
   }
 }

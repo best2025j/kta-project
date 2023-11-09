@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import lightmode from "../../assets/svgs/Lightmode.svg";
-import darkmode from "../../assets/svgs/Darkmode.svg";
+import  { useState } from "react"; 
+import light_mode from "../../assets/svgs/Lightmode.svg";
+import dark_mode from "../../assets/svgs/Darkmode.svg";
 
 const DarkModeSwitch = () => {
   const [themeToggle, setThemeToggle] = useState(
@@ -15,14 +15,14 @@ const DarkModeSwitch = () => {
     <div>
       {themeToggle === "dark" ? (
         <img
-          src={lightmode}
+          src={light_mode}
           alt="dark-mode"
           className="w-10 h-10 cursor-pointer"
           onClick={toggleTheme}
         />
       ) : (
         <img
-          src={darkmode}
+          src={dark_mode}
           alt="dark-mode"
           className="w-10 h-10 cursor-pointer"
           onClick={toggleTheme}
