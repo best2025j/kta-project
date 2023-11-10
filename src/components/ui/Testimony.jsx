@@ -1,6 +1,5 @@
 // import React from "react";
 
-
 const Testimony = () => {
   return (
     <div className=" bg-[#fff] text-white h-full py-10 ">
@@ -35,10 +34,6 @@ const Testimony = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-    
->>>>>>> 653de20051ac6e277c4e9b694c7202d88c602dec
     </div>
   );
 };

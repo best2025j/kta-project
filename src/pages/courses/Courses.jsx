@@ -12,6 +12,7 @@ const Courses = () => {
       name: "web-development",
       number: 1,
       image: "/webDev.png",
+      mbImage: "",
       course: "Web Development",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
       captionName: "Duration",
