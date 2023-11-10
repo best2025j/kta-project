@@ -141,7 +141,7 @@ const Courses = () => {
               <div className="md:w-[931px] w-[340px] bg-white p-4 rounded-3xl">
                 <img
                   src={item.image}
-                  className="w-[340px] h-[269px] md:w-auto md:h-auto"
+                  className=" md:w-auto md:h-auto"
                   alt="NO IMAGE FOT THIS COURSE"
                   onError={() =>
                     console.error("Image failed to load for:", item.image)
@@ -212,7 +212,6 @@ const Courses = () => {
 };
 
 export default Courses;
-
 
 // const Courses = () => {
 //   const courseData = [

@@ -29,14 +29,13 @@ const Sections = () => {
   return (
     <div className="py-20 bg-[#ffffff] px-14">
       <div className="space-y-[16px]">
-        <h1 className="md:text-5xl font-bold text-[24px]">
-          {" "}
+        <h1 className="md:text-5xl font-bold text-[20px]">
           What we have to offer
         </h1>
-        <p className="text-lg font-normal text-[#4F616D] w-[294px] md:w-[480px]">
+        <p className="md:text-lg text-base font-normal text-[#4F616D] w-[294px] md:w-[480px]">
           At Kwaratech Academy, we&apos;re not just another tech education
           provider; we&apos;re your partner in unlocking a world of
-          opportunities, and here is why you should choose us.
+          opportunities, and here is why you should choose us...
         </p>
       </div>
 
@@ -47,7 +46,7 @@ const Sections = () => {
             key={index}
           >
             <div>{item.svg}</div>
-            <h1 className="font-bold text-[24px] md:text-4xl w-[288px]">
+            <h1 className="font-bold text-[18px] md:text-4xl w-[288px]">
               {item.headings}
             </h1>
             <p className="text-md py-[16px]">{item.paragraph}</p>
