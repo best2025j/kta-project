@@ -5,7 +5,6 @@ import ButtonWhite from "../Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
-// import fb from "../../assets/svgs/facebooklogo.svg";
 import ig from "../../assets/svgs/ig.svg";
 import Twitter from "../../assets/svgs/Twitterlogo.svg";
 import whatsapp from "../../assets/svgs/whatsapp.svg";
@@ -61,7 +60,7 @@ const Footer = () => {
           </h3>
 
           <div className="flex space-x-5 justify-end items-center sm:w-[360px] pt-4 text-2xl cursor-pointer">
-            <Link href="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==">
+            <Link to="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==">
               <img
                 alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
@@ -70,7 +69,8 @@ const Footer = () => {
                 src={ig}
               />
             </Link>
-            <Link href="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
+
+            <Link to="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
               <img
                 alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
@@ -80,7 +80,7 @@ const Footer = () => {
               />
             </Link>
 
-            <Link href="https://wa.me/07011198112">
+            <Link to="https://wa.me/07011198112">
               <img
                 alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
@@ -90,11 +90,11 @@ const Footer = () => {
               />
             </Link>
 
-            <Link href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
+            <Link to="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
               <FaFacebook className="text-white bg-lightBlue h-8 rounded-full w-8 cursor-pointer hover:scale-110 ease-in duration-300 p-1" />
             </Link>
 
-            <Link href="https://www.linkedin.com/in/kwara-tech-academy-a774a1244">
+            <Link to="https://www.linkedin.com/in/kwara-tech-academy-a774a1244">
               <BiLogoLinkedin className=" text-white h-8 rounded w-8 cursor-pointer hover:scale-110 ease-in duration-300 p-[2px]" />
             </Link>
           </div>
