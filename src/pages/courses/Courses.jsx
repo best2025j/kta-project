@@ -12,6 +12,7 @@ const Courses = () => {
       name: "web-development",
       number: 1,
       image: "/webDev.png",
+      mbImage: "/webImage.png",
       course: "Web Development",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
       captionName: "Duration",
@@ -24,6 +25,7 @@ const Courses = () => {
       id: 2,
       name: "design-animation",
       number: 2,
+      mbImage: "uifull.png",
       image: "/Designs.png",
       course: "Design/ Animation",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -37,6 +39,7 @@ const Courses = () => {
       id: 3,
       name: "ui-ux",
       number: 3,
+      mbImage: "ui_ux.png",
       image: "/UI.png",
       course: "UI/UX Design",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -50,6 +53,7 @@ const Courses = () => {
       id: 4,
       name: "data-analytics",
       number: 4,
+      mbImage: "dataScience.png",
       image: "/DataSciences.png",
       course: "Data & Analytics",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -63,6 +67,7 @@ const Courses = () => {
       id: 5,
       name: "cyber-security",
       number: 5,
+      mbImage: "cyber.png",
       image: "/CyberSecuritys.png",
       course: "Cybersecurity",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -76,6 +81,7 @@ const Courses = () => {
       id: 6,
       name: "va-remote-jobs",
       number: 6,
+      mbImage: "vrpix.png",
       image: "/VirtualRemoteJob.png",
       course: "Virtual Assistance and Remote Jobs",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -89,6 +95,7 @@ const Courses = () => {
       id: 7,
       name: "digital-marketing",
       number: 7,
+      mbImage: "digitalpix.png",
       image: "/DMarketting.png",
       course: "Digital Marketing",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -102,6 +109,7 @@ const Courses = () => {
       id: 8,
       name: "ContentWriting",
       number: 8,
+      mbImage: "contentpix.png",
       image: "/CopyWritting.png",
       course: "Content Writing",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -128,7 +136,7 @@ const Courses = () => {
         <div className="grid md:gap-6 gap-2 grid-cols-1">
           {courseData.map((item, index) => (
             <div
-              className={`flex justify-around py-20 ${
+              className={`flex justify-around md:py-20 py-10 ${
                 (index % 2 === 0 && "flex md:flex-row flex-col") ||
                 (index % 2 !== 0 && "md:flex-row-reverse")
               }`}
@@ -138,17 +146,26 @@ const Courses = () => {
                 0{item.number}
               </h1>
 
-              <div className="md:w-[931px] w-[340px] bg-white p-4 rounded-3xl">
+              <div className="md:w-[931px] w-[340px] bg-white p-4 rounded-3xl mx-auto">
                 <img
                   src={item.image}
-                  className=" md:w-auto md:h-auto"
+                  className="md:w-auto md:h-auto hidden md:flex"
                   alt="NO IMAGE FOT THIS COURSE"
                   onError={() =>
                     console.error("Image failed to load for:", item.image)
                   }
                 />
 
-                <div className="flex p-4 pt-[40px] items-start justify-between">
+                <img
+                  src={item.mbImage}
+                  className="md:w-auto md:h-auto md:hidden flex"
+                  alt="NO IMAGE FOT THIS COURSE"
+                  onError={() =>
+                    console.error("Image failed to load for:", item.mbImage)
+                  }
+                />
+
+                <div className="flex p-4 md:pt-[40px] items-start justify-between">
                   <div className="md:w-[439px]  w-[201px] space-y-4">
                     <h1 className="md:text-5xl font-bold">{item.course}</h1>
                     <p className="text-[12px] md:text-[18px]">{item.info}</p>
@@ -184,7 +201,6 @@ const Courses = () => {
                     <span>{item.InstructorName}</span>
                   </div>
                 </div>
-
                 <div className="py-6 flex items-center justify-center ">
                   {/* Use Link for navigation */}
                   <Link to={`/courses/${item.name}`}>
