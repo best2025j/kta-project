@@ -1,5 +1,6 @@
 // import React from "react";
 
+
 const Testimony = () => {
   return (
     <div className=" bg-[#fff] text-white h-full py-10 ">
@@ -23,17 +24,21 @@ const Testimony = () => {
           <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 self-stretch space-y-3 text-justify">
             <img src="/semi.png" alt="" />
             <h1 className="md:text-lg text-sm">
-              &quot;I can't thank Kwaratech Academy enough for their top-notch
-              tech courses. As a web developer, I needed to upskill in various
-              areas, and KTA had the perfect courses for me. The hands-on
-              experience and expert guidance were invaluable. I've not only
-              improved my skills but also landed a new job in a top tech
-              company. KTA is a game-changer!&quot;
+              &quot;I can&apos;t thank Kwaratech Academy enough for their
+              top-notch tech courses. As a web developer, I needed to upskill in
+              various areas, and KTA had the perfect courses for me. The
+              hands-on experience and expert guidance were invaluable. I$apos;ve
+              not only improved my skills but also landed a new job in a top
+              tech company. KTA is a game-changer!&quot;
             </h1>
             <h5 className="flex justify-end py-4">Emmanuel Osai</h5>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 653de20051ac6e277c4e9b694c7202d88c602dec
     </div>
   );
 };
