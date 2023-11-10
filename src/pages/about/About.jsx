@@ -1,5 +1,6 @@
 // import React from "react";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
+import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 
@@ -251,7 +252,17 @@ const About = () => {
               and growing community, where dreams are empowered and futures are
               shaped.
             </p>
-            <ButtonWhite label="Get Started" />
+
+            <ButtonWhite
+              className={
+                "flex items-center text-base text-center justify-center"
+              }
+              label={
+                <>
+                  Get Started <ViewAllCourseIcon />
+                </>
+              }
+            />
           </div>
           <div>
             <img src="/ktaSvg.png" alt="" />
