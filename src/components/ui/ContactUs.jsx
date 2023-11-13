@@ -25,7 +25,7 @@ const ContactUs = () => {
             </p>
           </div>
 
-          <div className="py-6 w-[288px] md:w-[438px]">
+          <div className="py-6 w-[288px] md:w-full">
             <ButtonWhite
               className={
                 "flex items-center w-full text-base text-center justify-center"
