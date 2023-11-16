@@ -41,6 +41,20 @@ html {
   font-style: normal;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation class to the element */
+span.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
 body {
   font-family: "SF Pro Display Regular", sans-serif;
 }

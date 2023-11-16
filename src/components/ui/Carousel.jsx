@@ -16,10 +16,10 @@ const Carousel = () => {
 
   return (
     <section>
-      <div className="h-full w-[85%] mx-auto sm:mx-0 sm:w-full">
-        <div className="h-[30px] rounded-[50%] relative top-[28px] md:top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
+      <div className="h-full mx-auto sm:mx-0 w-full">
+        <div className="h-[33px] rounded-[50%] relative top-[18px] md:top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
 
-        <div className="hidden lg:grid grid-cols-3 lg:grid-cols-5">
+        <div className="hidden lg:grid lg:grid-cols-5">
           {staffData.map((image, index) => (
             <div
               key={index}
@@ -38,7 +38,7 @@ const Carousel = () => {
           {visibleImages.map((image, index) => (
             <div
               key={index + startIndex} // Adjust the key to account for the subset
-              className="justify-center items-center hover:bg-slate-100 rounded-3xl p-2 sm:flex dark:bg-slate-800 flex-col"
+              className="justify-center items-center hover:bg-slate-100 rounded-3xl md:p-2 sm:flex dark:bg-slate-800 flex-col"
             >
               <img
                 className="h-48 w-96 md:h-full md:w-full"
@@ -49,7 +49,7 @@ const Carousel = () => {
           ))}
         </div>
 
-        <div className="h-[30px] rounded-[50%] relative -top-[20px] md:-top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
+        <div className="h-[30px] rounded-[50%] relative -top-[16px] md:-top-[76px] bg-[#FBFCFF] md:h-[117px] w-full flex-shrink-0" />
       </div>
     </section>
   );
