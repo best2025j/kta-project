@@ -3,7 +3,7 @@ import image from "../../assets/images/kwaraTech.jpg";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import ButtonDefault from "../Buttons/ButtonDefault";
+// import ButtonDefault from "../Buttons/ButtonDefault";
 // import DarkModeSwitch from "../ui/DarkModeSwitch";
 
 const Header = () => {
@@ -14,14 +14,14 @@ const Header = () => {
   const handleClose = () => setNav(!nav);
 
   const location = useLocation();
-  
+
   const isActiveLink = (path) => {
     return location.pathname === path;
   };
 
   const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
   // Added 'active-link' class
-  const activeLink = inactiveLink + " text-[#00AFF0]"; 
+  const activeLink = inactiveLink + " text-[#00AFF0]";
 
   return (
     <div
@@ -68,11 +68,7 @@ const Header = () => {
 
         <div className="hidden md:flex items-center justify-center ">
           <div className="">
-            <ButtonDefault label="Login" className={"text-[#00AFF0]"} />
-          </div>
-
-          <div className="">
-            <ButtonWhite label="Sign up" className={""} />
+            <ButtonWhite label="Get Started" className={""} />
           </div>
 
           <div className="">{/* <DarkModeSwitch /> */}</div>
@@ -171,11 +167,7 @@ const Header = () => {
 
             <div className="bottom-1 sm:bottom-0 absolute  items-center justify-center w-[80%]">
               <div>
-                <ButtonWhite className={"w-full"} label="Sign up" />
-              </div>
-
-              <div>
-                <ButtonDefault className={"w-full"} label="Login" />
+                <ButtonWhite className={"w-full"} label="Get Started" />
               </div>
             </div>
           </div>

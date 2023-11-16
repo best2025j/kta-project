@@ -351,7 +351,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="py-[243px] flex justify-between items-center">
+          <div className="pt-[243px] flex justify-between items-center">
             <div className="">
               <h1 className="text-[40px] font-bold">
                 Internship Opportunities

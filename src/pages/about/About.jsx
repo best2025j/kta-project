@@ -1,4 +1,5 @@
 // import React from "react";
+import { Link } from "react-router-dom";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Footer from "../../components/layout/Footer";
@@ -242,10 +243,10 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center py-20">
-          <div className="w-[439px] space-y-4">
+        <div className="flex justify-between items-center py-40">
+          <div className="w-[439px]">
             <h1 className="font-bold text-[48px]">Begin your career</h1>
-            <p>
+            <p className="text-[16px]">
               Whether you&apos;re a student taking your first steps into the
               tech world or a professional seeking to upskill, Kwaratech Academy
               is here to guide you. We invite you to be a part of our vibrant
@@ -253,20 +254,22 @@ const About = () => {
               shaped.
             </p>
 
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center"
-              }
-              label={
-                <>
-                  Get Started <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <div className="py-6 w-[288px] md:w-full">
+              <Link to={`/courses`}>
+                <ButtonWhite
+                  className={
+                    "flex items-center w-full text-base text-center justify-center"
+                  }
+                  label={
+                    <>
+                      Get Started <ViewAllCourseIcon />
+                    </>
+                  }
+                />
+              </Link>
+            </div>
           </div>
-          <div>
-            <img src="/ktaSvg.png" alt="" />
-          </div>
+          <img src="/ktaSvg.png" alt="" className="w-auto h-auto "/>
         </div>
       </div>
 
