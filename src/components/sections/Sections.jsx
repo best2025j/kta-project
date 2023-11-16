@@ -27,9 +27,9 @@ const Sections = () => {
   ];
 
   return (
-    <div className="py-20 bg-[#ffffff] px-14">
+    <div className="py-20 bg-[#ffffff] md:px-14 px-10">
       <div className="space-y-[16px]">
-        <h1 className="md:text-5xl font-bold text-[20px]">
+        <h1 className="md:text-5xl font-bold text-[24px]">
           What we have to offer
         </h1>
         <p className="md:text-lg text-base font-normal text-[#4F616D] w-[294px] md:w-[480px]">
@@ -42,11 +42,11 @@ const Sections = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-6">
         {data.map((item, index) => (
           <div
-            className="relative bg-[#FBFCFF] py-[56px] rounded-3xl px-[24px] space-y-2"
+            className="relative bg-[#FBFCFF] py-[56px] rounded-3xl md:px-[24px] space-y-2"
             key={index}
           >
             <div>{item.svg}</div>
-            <h1 className="font-bold text-[18px] md:text-4xl w-[288px]">
+            <h1 className="font-bold text-[24px] md:text-4xl w-[288px]">
               {item.headings}
             </h1>
             <p className="text-md py-[16px]">{item.paragraph}</p>

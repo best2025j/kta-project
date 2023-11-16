@@ -3,7 +3,7 @@
 const Testimony = () => {
   return (
     <div className=" bg-[#fff] text-white h-full py-10 ">
-      <div className="w-[80%] flex justify-center items-center flex-col mx-auto">
+      <div className="md:w-[80%] px-4 md:px-0 flex justify-center items-center flex-col mx-auto">
         <h1 className="text-black text-3xl  md:text-5xl font-bold">
           Testimonials
         </h1>

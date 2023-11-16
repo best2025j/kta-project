@@ -28,10 +28,10 @@ const CarouselCards = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="ml-8 px-4 md:ml-32 py-32 space-y-[110px]">
+      <div className=" px-4 md:ml-32 py-32 space-y-[110px]">
         <div className="h-full w-full space-y-3">
           <h1 className="sm:text-5xl text-xl font-bold">Explore our courses</h1>
-          <div className="max-w-[480px]">
+          <div className="md:max-w-[480px]">
             <p className="text-[#4F616D] md:text-base text-xs">
               At KTA, we offer a diverse range of tech courses that cater to
               beginners and experts alike. From web development to data science,
@@ -42,7 +42,7 @@ const CarouselCards = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-6 items-start py-6">
+        <div className="hidden md:flex justify-between gap-6 items-start py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-6">
             {staffData.map((item, index) => (
               <div
@@ -57,7 +57,7 @@ const CarouselCards = () => {
                   <img
                     src={item.thumbnail}
                     alt=""
-                    className="md:w-full md:h-full w-full h-96"
+                    className="md:h-full w-full h-96"
                   />
                 </div>
 
@@ -66,7 +66,7 @@ const CarouselCards = () => {
                     <img
                       src={item.fullImage}
                       alt=""
-                      className="h-[620px] w-full"
+                      className="md:h-full h-96 w-full"
                     />
                   </div>
                 )}
@@ -78,6 +78,32 @@ const CarouselCards = () => {
             <img src="/KTA.png" alt="" />
           </div>
         </div>
+
+        <div className="md:hidden block space-y-14">
+          <div className="space-y-3">
+            <h1 className="text-[24px] font-bold">
+              01. Introduction to HTML and CSS
+            </h1>
+            <img src="/frontend-full.png" alt="" />
+          </div>
+
+          <div className="space-y-3">
+            <h1 className="text-[24px] font-bold">02. python and java</h1>
+            <img src="/backend-full.png" alt="" />
+          </div>
+
+          <div className="space-y-3">
+            <h1 className="text-[24px] font-bold">03. Design </h1>
+            <img src="/design-full.png" alt="" />
+          </div>
+          
+          <div className="space-y-3">
+            <h1 className="text-[24px] font-bold capitalize">
+              04. Data Analysis
+            </h1>
+            <img src="/dataScience-full.png" alt="" />
+          </div>
+        </div>
       </div>
 
       <div className="py-6 flex items-center justify-center ">
@@ -87,7 +113,7 @@ const CarouselCards = () => {
             className={"flex items-center text-base text-center justify-center"}
             label={
               <>
-                View Courses <ViewAllCourseIcon />
+                View all courses <ViewAllCourseIcon />
               </>
             }
           />
