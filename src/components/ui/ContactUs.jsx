@@ -23,19 +23,18 @@ const ContactUs = () => {
               say hello. We&apos;re committed to providing you with the best
               learning and workspace experience possible.
             </p>
-          </div>
-
-          <div className="py-6 w-[288px] md:w-full">
-            <ButtonWhite
-              className={
-                "flex items-center w-full text-base text-center justify-center"
-              }
-              label={
-                <>
-                  Contact Us <ContactIcon />
-                </>
-              }
-            />
+            <div className="py-6 w-[288px] md:w-full">
+              <ButtonWhite
+                className={
+                  "flex items-center w-full text-base text-center justify-center"
+                }
+                label={
+                  <>
+                    Contact Us <ContactIcon />
+                  </>
+                }
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -265,7 +265,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="border flex gap-[32px] flex-col">
+          <div className="flex gap-[32px] flex-col">
             <div className="flex gap-[32px]">
               <div className="flex flex-col justify-center gap-[30px] self-stretch">
                 <img
@@ -349,6 +349,34 @@ const Services = () => {
                 />
               </Link>
             </div>
+          </div>
+
+          <div className="py-[243px] flex justify-between items-center">
+            <div className="">
+              <h1 className="text-[40px] font-bold">
+                Internship Opportunities
+              </h1>
+              <p className="w-[439px] text-[16px]">
+                Join our team as an intern or explore our internship programs to
+                gain practical experience and kickstart your tech career.
+              </p>
+
+              <div className="py-6 w-[288px] md:w-full">
+                <Link to={`/courses`}>
+                  <ButtonWhite
+                    className={
+                      "flex items-center w-full text-base text-center justify-center"
+                    }
+                    label={
+                      <>
+                        Apply now <ViewAllCourseIcon />
+                      </>
+                    }
+                  />
+                </Link>
+              </div>
+            </div>
+            <img src="/ktaSvg.png" alt="kta-image" />
           </div>
         </div>
       </div>
