@@ -49,7 +49,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-start py-[120px]">
+        <div className="flex justify-between items-start pt-[120px]">
           <div className="flex flex-col pl-[56px]">
             <div className="">
               <h1 className="text-[42px] font-bold">Tech Skill Programs</h1>
@@ -252,6 +252,103 @@ const Services = () => {
 
           <div>
             <img src="/KTA2.png" alt="no water mark" />
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center w-[90%] h-full mx-auto">
+          <div className="flex flex-col justify-center items-center text-center py-10">
+            <h1 className="text-[42px] font-bold">Specialized Programs</h1>
+            <p className="text-[16px] max-w-[700px]">
+              Our programs at Kwaratech Academy are made carefully to match
+              exactly what you need to learn about technology. We focus on what
+              the industry needs right now.
+            </p>
+          </div>
+
+          <div className="border flex gap-[32px] flex-col">
+            <div className="flex gap-[32px]">
+              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+                <img
+                  src="/schoolboy2.png"
+                  alt="pix 1"
+                  className="h-[202px] items-stretch"
+                />
+
+                <div className="flex justify-center items-center flex-col text-center">
+                  <h className="text-[36px] font-bold">Tech2School</h>
+                  <p className="text-[16px] w-[439px]">
+                    We train junior and secondary school students during school
+                    hours on creating websites, writing blogs, making
+                    animations, and more.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+                <img
+                  src="/ladysmile.png"
+                  alt="pix 1"
+                  className="h-[202px] items-stretch"
+                />
+
+                <div className="flex justify-center items-center flex-col text-center">
+                  <h className="text-[36px] font-bold">Tech4Women</h>
+                  <p className="text-[16px] w-[439px]">
+                    Empowering women with skills like digital marketing and data
+                    analysis to thrive in their entrepreneurial endeavors and
+                    grow in any field of their choosing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-[32px]">
+              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+                <img
+                  src="/copper2.png"
+                  alt="pix 1"
+                  className="h-[202px] items-stretch"
+                />
+
+                <div className="flex justify-center items-center flex-col text-center">
+                  <h className="text-[36px] font-bold">Tech4Kopa</h>
+                  <p className="text-[16px] w-[439px]">
+                    Through our specialized Tech4kopa initiative, we ensure corp
+                    members gain a comprehensive understanding of essential tech
+                    proficiencies.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+                <img
+                  src="/schoolboy2.png"
+                  alt="pix 1"
+                  className="h-[202px] items-stretch"
+                />
+
+                <div className="flex justify-center items-center flex-col text-center">
+                  <h className="text-[36px] font-bold">Summer Experience</h>
+                  <p className="text-[16px] w-[439px]">
+                    Fun and educational tech activities for kids during holidays
+                    to learn programming, Excel, animation, public speaking, and
+                    video editing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="py-6 flex items-center justify-center ">
+              {/* Use Link for navigation */}
+              <Link to={`/courses`}>
+                <ButtonWhite
+                  className={
+                    "flex items-center text-xs md:text-base text-center justify-center"
+                  }
+                  label={
+                    <>
+                      Register now <ViewAllCourseIcon />
+                    </>
+                  }
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
