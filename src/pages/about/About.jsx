@@ -294,7 +294,7 @@ const About = () => {
               </Link>
             </div>
           </div>
-          <img src="/ktaSvg.png" alt="" className="w-auto h-auto " />
+          <img src="/ktaSvg.png" alt="" className="w-auto h-auto md:flex hidden" />
         </div>
       </div>
 
