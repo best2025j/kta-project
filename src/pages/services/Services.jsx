@@ -7,11 +7,14 @@ import SectionContents from "../../components/layout/SectionContents";
 const Services = () => {
   return (
     <>
-      <div className="py-40 flex flex-col h-full w-full">
-        <div className=" flex justify-center mx-auto items-center">
-          <div className="flex flex-col">
-            <h1 className="text-[48px] font-bold">What we offer</h1>
-            <p className="w-[439px]">
+      <div className="py-24 md:py-40 flex flex-col h-full w-full">
+        <div className=" flex flex-col-reverse md:flex-row justify-between mx-auto items-center w-full h-full">
+        <div className="flex items-center justify-center mx-auto"></div>
+          <div className="flex flex-col space-y-2 py-6 md:py-0">
+            <h1 className="text-[24px] md:text-[48px] font-bold">
+              What we offer
+            </h1>
+            <p className="text-[#4F616D] md:w-[420px] w-[319px] text-xs md:text-[16px]">
               At Kwaratech Academy, we provide a range of services designed to
               empower individuals with the skills needed for success in the
               digital age. We&apos;re not just another tech education provider;
@@ -24,7 +27,7 @@ const Services = () => {
               <Link to={`/courses`}>
                 <ButtonWhite
                   className={
-                    "flex items-center text-xs md:text-base text-center justify-center"
+                    "flex items-center text-xs md:text-base text-center justify-center w-[219px] md:w-full"
                   }
                   label={
                     <>
@@ -36,32 +39,42 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="bg-[#00AFF0] w-[692px] h-[612.9px] rounded-t-[480px] flex justify-between items-center mx-auto">
-            <div className=" relative left-[60px]">
-              <h1 className="text-[48px] font-bold text-white">
+          <div className="bg-[#00AFF0] md:w-[692px] w-full md:h-[612.9px] rounded-t-[480px] flex justify-between items-center mx-auto relative">
+            <div className=" relative md:left-[60px] w-[134px] md:w-full left-10">
+              <h1 className="md:text-[48px] text-[24px] font-bold text-white">
                 Best Graduating Student
               </h1>
-              <h6 className="text-[36px] font-bold">Hannah Adeniyi</h6>
-              <span className="text-[18px]">Front-end Development.</span>
+              <h6 className="md:text-[36px] text-[16px] font-bold">
+                Hannah Adeniyi
+              </h6>
+              <span className="md:text-[18px] text-xs">
+                Front-end Development.
+              </span>
             </div>
 
-            <img src="/girlpix.png" alt="" />
+            <img
+              src="/girlpix.png"
+              alt=""
+              className="w-[193px] h-[286px] md:h-auto md:w-auto"
+            />
           </div>
         </div>
 
-        <div className="flex justify-between items-start pt-[120px]">
-          <div className="flex flex-col pl-[56px]">
+        <div className="flex justify-between items-start md:pt-[120px] pt-[60px]">
+          <div className="flex flex-col md:pl-[56px] pl-[28px]">
             <div className="">
-              <h1 className="text-[42px] font-bold">Tech Skill Programs</h1>
-              <p className="text-[16px] w-[384px] font-normal">
+              <h1 className="text-[24px] md:text-[42px] font-bold">
+                Tech Skill Programs
+              </h1>
+              <p className="text-[#4F616D] ms:text-[16px] text-xs w-[319px] font-normal">
                 At Kwaratech, your success is our priority. As you embark on
                 your learning journey with us, we focus on ensuring specific key
                 areas and takeaways for your growth and development
               </p>
             </div>
 
-            <div className="flex gap-[24px]">
-              <div className="flex justify-center items-center bg-[#FBFCFF] rounded-[24px] w-[369px] h-[319px]">
+            <div className="flex flex-col md:flex-row mx-auto w-full h-full">
+              <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] rounded-[24px] md:w-[369px] w-full h-[319px]">
                 <div className="flex flex-col space-y-3">
                   <span>
                     <svg
@@ -95,14 +108,15 @@ const Services = () => {
                       />
                     </svg>
                   </span>
-                  <h1 className="text-[36px]">Experience</h1>
-                  <p className="w-[321px] text-[16px]">
+                  <h1 className="md:text-[36px] text-[24px]">Experience</h1>
+                  <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
                     Applying theories to practical projects, we ensure you have
                     a deep understanding of concepts through application
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center items-center bg-[#FBFCFF] rounded-[24px] w-[369px] h-[319px]">
+
+              <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] rounded-[24px] md:w-[369px] w-full h-[319px]">
                 <div className="flex flex-col space-y-3">
                   <svg
                     width="56"
@@ -126,8 +140,8 @@ const Services = () => {
                     />
                   </svg>
 
-                  <h1 className="text-[36px]">Collaboration</h1>
-                  <p className="w-[321px] text-[16px]">
+                  <h1 className="md:text-[36px] text-[24px]">Collaboration</h1>
+                  <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
                     Gain insights from peers with different perspectives,
                     enhancing your problem-solving and communication skills
                   </p>
@@ -135,44 +149,48 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="flex gap-[24px]">
-              <div className="flex justify-center items-center bg-[#FBFCFF] rounded-[24px] w-[369px] h-[319px]">
+            <div className="flex flex-col md:flex-row w-full h-full mx-auto">
+              <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] rounded-[24px] md:w-[369px] w-full h-[319px]">
                 <div className="flex flex-col space-y-3">
-                  <svg
-                    width="56"
-                    height="56"
-                    viewBox="0 0 56 56"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M35.9549 43.3765C35.0216 43.3765 34.2516 42.6065 34.2516 41.6732C34.2516 40.7398 35.0216 39.9698 35.9549 39.9698C42.5349 39.9698 47.9016 34.6032 47.9016 28.0232C47.9016 21.4432 42.5349 16.0765 35.9549 16.0765C29.3749 16.0765 24.0082 21.4432 24.0082 28.0232C24.0082 28.9565 23.2382 29.7265 22.3049 29.7265C21.3716 29.7265 20.6016 28.9565 20.6016 28.0232C20.6016 19.5532 27.4849 12.6465 35.9782 12.6465C44.4716 12.6465 51.3316 19.5298 51.3316 27.9998C51.3316 36.4698 44.4482 43.3765 35.9549 43.3765Z"
-                      fill="#00AFF0"
-                    />
-                    <path
-                      opacity="0.4"
-                      d="M51.3333 28.0002C51.3333 36.4935 44.45 43.3769 35.9567 43.3769C33.04 43.3769 30.31 42.5602 28 41.1369C32.4333 38.4535 35.3967 33.5769 35.3967 28.0002C35.3967 22.4235 32.4333 17.5469 28 14.8635C30.3333 13.4635 33.0633 12.6235 35.9567 12.6235C44.45 12.6235 51.3333 19.5069 51.3333 28.0002Z"
-                      fill="#00AFF0"
-                    />
-                    <path
-                      d="M20.0446 12.6235C20.978 12.6235 21.748 13.3935 21.748 14.3269C21.748 15.2602 20.978 16.0302 20.0446 16.0302C13.4646 16.0302 8.09797 21.3969 8.09797 27.9769C8.09797 34.5569 13.4646 39.9235 20.0446 39.9235C26.6246 39.9235 31.9913 34.5569 31.9913 27.9769C31.9913 27.0435 32.7613 26.2735 33.6946 26.2735C34.628 26.2735 35.398 27.0435 35.398 27.9769C35.398 36.4469 28.5146 43.3535 20.0213 43.3535C11.528 43.3535 4.66797 36.4702 4.66797 28.0002C4.66797 19.5302 11.5513 12.6235 20.0446 12.6235Z"
-                      fill="#00AFF0"
-                    />
-                    <path
-                      opacity="0.5"
-                      d="M35.398 28.0002C35.398 33.5769 32.4346 38.4535 28.0013 41.1369C25.668 42.5369 22.938 43.3769 20.0446 43.3769C11.5513 43.3769 4.66797 36.4935 4.66797 28.0002C4.66797 19.5069 11.5513 12.6235 20.0446 12.6235C22.938 12.6235 25.668 13.4635 28.0013 14.8635C32.4346 17.5469 35.398 22.4235 35.398 28.0002Z"
-                      fill="#C6E7FF"
-                    />
-                  </svg>
+                  <span>
+                    {" "}
+                    <svg
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M35.9549 43.3765C35.0216 43.3765 34.2516 42.6065 34.2516 41.6732C34.2516 40.7398 35.0216 39.9698 35.9549 39.9698C42.5349 39.9698 47.9016 34.6032 47.9016 28.0232C47.9016 21.4432 42.5349 16.0765 35.9549 16.0765C29.3749 16.0765 24.0082 21.4432 24.0082 28.0232C24.0082 28.9565 23.2382 29.7265 22.3049 29.7265C21.3716 29.7265 20.6016 28.9565 20.6016 28.0232C20.6016 19.5532 27.4849 12.6465 35.9782 12.6465C44.4716 12.6465 51.3316 19.5298 51.3316 27.9998C51.3316 36.4698 44.4482 43.3765 35.9549 43.3765Z"
+                        fill="#00AFF0"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M51.3333 28.0002C51.3333 36.4935 44.45 43.3769 35.9567 43.3769C33.04 43.3769 30.31 42.5602 28 41.1369C32.4333 38.4535 35.3967 33.5769 35.3967 28.0002C35.3967 22.4235 32.4333 17.5469 28 14.8635C30.3333 13.4635 33.0633 12.6235 35.9567 12.6235C44.45 12.6235 51.3333 19.5069 51.3333 28.0002Z"
+                        fill="#00AFF0"
+                      />
+                      <path
+                        d="M20.0446 12.6235C20.978 12.6235 21.748 13.3935 21.748 14.3269C21.748 15.2602 20.978 16.0302 20.0446 16.0302C13.4646 16.0302 8.09797 21.3969 8.09797 27.9769C8.09797 34.5569 13.4646 39.9235 20.0446 39.9235C26.6246 39.9235 31.9913 34.5569 31.9913 27.9769C31.9913 27.0435 32.7613 26.2735 33.6946 26.2735C34.628 26.2735 35.398 27.0435 35.398 27.9769C35.398 36.4469 28.5146 43.3535 20.0213 43.3535C11.528 43.3535 4.66797 36.4702 4.66797 28.0002C4.66797 19.5302 11.5513 12.6235 20.0446 12.6235Z"
+                        fill="#00AFF0"
+                      />
+                      <path
+                        opacity="0.5"
+                        d="M35.398 28.0002C35.398 33.5769 32.4346 38.4535 28.0013 41.1369C25.668 42.5369 22.938 43.3769 20.0446 43.3769C11.5513 43.3769 4.66797 36.4935 4.66797 28.0002C4.66797 19.5069 11.5513 12.6235 20.0446 12.6235C22.938 12.6235 25.668 13.4635 28.0013 14.8635C32.4346 17.5469 35.398 22.4235 35.398 28.0002Z"
+                        fill="#C6E7FF"
+                      />
+                    </svg>
+                  </span>
 
-                  <h1 className="text-[36px]">Mentorship</h1>
-                  <p className="w-[321px] text-[16px]">
+                  <h1 className="md:text-[36px] text-[24px]">Mentorship</h1>
+                  <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
                     Get access lifetime guidance, career advice, and insights,
                     empowering you to navigate the tech landscape
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center items-center bg-[#FBFCFF] rounded-[24px] w-[369px] h-[319px]">
+
+              <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] rounded-[24px] md:w-[369px] w-full h-[319px]">
                 <div className="flex flex-col space-y-3">
                   <svg
                     width="56"
@@ -208,8 +226,8 @@ const Services = () => {
                     />
                   </svg>
 
-                  <h1 className="text-[36px]">Certifications</h1>
-                  <p className="w-[321px] text-[16px]">
+                  <h1 className="md:text-[36px] text-[24px]">Certifications</h1>
+                  <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
                     These credentials validate your proficiency and competency,
                     opening doors to diverse career opportunities and
                     advancements
@@ -223,7 +241,7 @@ const Services = () => {
               <Link to={`/courses`}>
                 <ButtonWhite
                   className={
-                    "flex items-center text-xs md:text-base text-center justify-center"
+                    "flex items-center text-xs md:text-base text-center justify-center w-[219px] md:w-full"
                   }
                   label={
                     <>
@@ -234,10 +252,12 @@ const Services = () => {
               </Link>
             </div>
 
-            <div className="flex flex-col py-52 gap-[48px]">
+            <div className="flex flex-col md:py-52 py-10 md:gap-[48px] gap-5 mx-auto">
               <div className="flex flex-col space-y-[12px]">
-                <h1 className="text-[42px] font-bold">Co-working space</h1>
-                <p className="w-[512px] text-[16px] font-normal">
+                <h1 className="md:text-[42px] text-[24px] font-bold">
+                  Co-working space
+                </h1>
+                <p className="text-[#4F616D] md:w-[512px] w-[319px] text-xs md:text-[16px] font-normal">
                   Our co-working space is designed to make your work easier. We
                   make sure you have constant power, so your work doesn’t get
                   interrupted. You can pick a pricing plan that suits you best.
@@ -246,53 +266,64 @@ const Services = () => {
                   collaborate easily with others.
                 </p>
               </div>
-              <img src="/booksLab.png" alt="book pix" />
+              <img
+                src="/booksLab.png"
+                alt="book pix"
+                className="w-[320px] h-[185px] md:w-auto md:h-auto"
+              />
             </div>
           </div>
 
-          <div>
+          <div className="md:flex hidden">
             <img src="/KTA2.png" alt="no water mark" />
           </div>
         </div>
 
-        <div className="flex flex-col justify-center w-[90%] h-full mx-auto">
+        <div className="flex flex-col justify-center md:w-[90%] w-full h-full mx-auto">
           <div className="flex flex-col justify-center items-center text-center py-10">
-            <h1 className="text-[42px] font-bold">Specialized Programs</h1>
-            <p className="text-[16px] max-w-[700px]">
+            <h1 className="text-[24px] md:text-[42px] font-bold">
+              Specialized Programs
+            </h1>
+            <p className="text-[#4F616D] text-xs md:text-[16px] md:max-w-[700px] max-w-[319px]">
               Our programs at Kwaratech Academy are made carefully to match
               exactly what you need to learn about technology. We focus on what
               the industry needs right now.
             </p>
           </div>
 
-          <div className="flex gap-[32px] flex-col">
-            <div className="flex gap-[32px]">
-              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+          <div className="flex gap-[32px] flex-col py-20 space-y-4">
+            <div className="flex md:gap-[32px]  space-y-5 md:space-y-0 flex-col md:flex-row">
+              <div className="flex flex-col justify-center md:gap-[30px] mx-auto self-stretch">
                 <img
                   src="/schoolboy2.png"
                   alt="pix 1"
-                  className="h-[202px] items-stretch"
+                  className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
                 />
 
                 <div className="flex justify-center items-center flex-col text-center">
-                  <h className="text-[36px] font-bold">Tech2School</h>
-                  <p className="text-[16px] w-[439px]">
+                  <h className="text-[24px] md:text-[36px] font-bold">
+                    Tech2School
+                  </h>
+                  <p className="text-[#4F616D] text-xs w-[319px] md:text-[16px] md:w-[439px]">
                     We train junior and secondary school students during school
                     hours on creating websites, writing blogs, making
                     animations, and more.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+
+              <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
                 <img
                   src="/ladysmile.png"
                   alt="pix 1"
-                  className="h-[202px] items-stretch"
+                  className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
                 />
 
                 <div className="flex justify-center items-center flex-col text-center">
-                  <h className="text-[36px] font-bold">Tech4Women</h>
-                  <p className="text-[16px] w-[439px]">
+                  <h className="text-[24px] md:text-[36px] font-bold">
+                    Tech4Women
+                  </h>
+                  <p className="text-[#4F616D] text-xs w-[319px] md:text-[16px] md:w-[439px]">
                     Empowering women with skills like digital marketing and data
                     analysis to thrive in their entrepreneurial endeavors and
                     grow in any field of their choosing.
@@ -300,33 +331,39 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-[32px]">
-              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+
+            <div className="flex gap-[32px] flex-col md:flex-row">
+              <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
                 <img
                   src="/copper2.png"
                   alt="pix 1"
-                  className="h-[202px] items-stretch"
+                  className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
                 />
 
                 <div className="flex justify-center items-center flex-col text-center">
-                  <h className="text-[36px] font-bold">Tech4Kopa</h>
-                  <p className="text-[16px] w-[439px]">
+                  <h className="md:text-[36px] text-[24px] font-bold">
+                    Tech4Kopa
+                  </h>
+                  <p className="text-[#4F616D] text-xs w-[319px] md:text-[16px] md:w-[439px]">
                     Through our specialized Tech4kopa initiative, we ensure corp
                     members gain a comprehensive understanding of essential tech
                     proficiencies.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-center gap-[30px] self-stretch">
+
+              <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
                 <img
                   src="/schoolboy2.png"
                   alt="pix 1"
-                  className="h-[202px] items-stretch"
+                  className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
                 />
 
                 <div className="flex justify-center items-center flex-col text-center">
-                  <h className="text-[36px] font-bold">Summer Experience</h>
-                  <p className="text-[16px] w-[439px]">
+                  <h className="md:text-[36px] text-[24px] font-bold">
+                    Summer Experience
+                  </h>
+                  <p className="text-[#4F616D] md:text-[16px] text-xs w-[319px] md:w-[439px]">
                     Fun and educational tech activities for kids during holidays
                     to learn programming, Excel, animation, public speaking, and
                     video editing.
@@ -334,6 +371,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
+
             <div className="py-6 flex items-center justify-center ">
               {/* Use Link for navigation */}
               <Link to={`/courses`}>
@@ -351,12 +389,12 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="pt-[243px] flex justify-between items-center">
+          <div className="pt-[243px] flex justify-between items-center space-y-10 flex-col md:flex-row">
             <div className="">
-              <h1 className="text-[40px] font-bold">
+              <h1 className="md:text-[40px] text-[24px] font-bold">
                 Internship Opportunities
               </h1>
-              <p className="w-[439px] text-[16px]">
+              <p className="text-[#4F616D] md:w-[439px] w-[319px] text-xs md:text-[16px]">
                 Join our team as an intern or explore our internship programs to
                 gain practical experience and kickstart your tech career.
               </p>
@@ -376,10 +414,16 @@ const Services = () => {
                 </Link>
               </div>
             </div>
-            <img src="/ktaSvg.png" alt="kta-image" />
+
+            <img
+              src="/ktaSvg.png"
+              alt="kta-image"
+              className="md:h-auto md:w-auto w-[90%] h-[189px] hidden md:flex"
+            />
           </div>
         </div>
       </div>
+
       <SectionContents />
       <Footer />
     </>

@@ -1,20 +1,19 @@
 // import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SectionContents from "../../components/layout/SectionContents";
 import Footer from "../../components/layout/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import image from "../../assets/images//cyber.png";
+import image from "../../assets/images/cyber.png";
 
 const DigitalMarketing = () => {
-  const { name } = useParams();
   // Access the 'id' parameter from the route
 
   return (
     <>
-      <div className="py-40 px-[80px]">
-        <h1 className="text-[48px] font-bold">Courses{name}</h1>
-        <p className="text-base font-normal text-[#4F616D]">
+      <div className="md:py-40 md:px-[80px] py-20 px-[16px]">
+        <h1 className="md:text-[48px] text-[24px] font-bold">Courses</h1>
+        <p className="text-sm md:text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwara-tech Academy&apos;s Diverse Range of
           Tech Courses
         </p>{" "}
@@ -24,34 +23,39 @@ const DigitalMarketing = () => {
         </Link>
         <div className="pt-14 h-full">
           <img src={image} alt="no image" />
-          <div className="flex justify-between px-2 py-[40px] bg-white">
+          <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
-              <h1 className="font-bold text-[48px]">Digital Marketing </h1>
-              <p className="text-base font-normal text-[#4F616D]">
+              <h1 className="font-bold text-[24px] md:text-[48px]">
+                Digital Marketing{" "}
+              </h1>
+              <p className="md:text-base w-[201px] md:w-auto text-xs font-normal text-[#4F616D]">
                 Learn to protect digital assets from cyber threats with
                 comprehensive training in cybersecurity.
               </p>
             </div>
-            <div className="space-y-4">
-              <h1 className="font-bold text-[36px]">Instructor</h1>
-              <span>Mr Azeez</span>
+
+            <div className="space-y-4 pt-2">
+              <h1 className="font-bold text-[14px] md:text-[36px]">
+                Instructor
+              </h1>
+              <span className="text-xs md:text-[18px]">Mr Azeez</span>
             </div>
           </div>
         </div>
         <div className="flex flex-col space-y-2 pt-[48px]">
-          <div className="flex justify-between">
-            <h1 className="text-[#00AFF0] font-bold text-[30px]">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               Digital Marketing{" "}
             </h1>
-            <span className="text-[#001E2D] font-[600] text-[28px]">
+            <span className="text-[#001E2D] font-[600] text-sm md:text-[28px]">
               Duration: 3 months
             </span>
           </div>
 
-          <div className=" text-[#4F616D] ">
+          <div className=" text-[#4F616D] space-y-3 ">
             <h1>Course Overview :</h1>
 
-            <ul className="list-disc list-inside text-base font-normal">
+            <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
                 Dive into the world of UI/UX design, where aesthetics meet
                 functionality.
@@ -94,10 +98,10 @@ const DigitalMarketing = () => {
             </ul>
           </div>
 
-          <div className="py-6 pt-[64px]">
+          <div className="py-6 pt-[64px] w-full ">
             <ButtonWhite
               className={
-                "flex items-center text-base text-center justify-center w-[399px]"
+                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
               }
               label={
                 <>

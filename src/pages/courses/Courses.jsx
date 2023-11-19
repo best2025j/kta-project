@@ -107,7 +107,7 @@ const Courses = () => {
 
     {
       id: 8,
-      name: "ContentWriting",
+      name: "content-writing",
       number: 8,
       mbImage: "contentpix.png",
       image: "/CopyWritting.png",
@@ -138,15 +138,15 @@ const Courses = () => {
             <div
               className={`flex justify-around md:py-20 py-10 ${
                 (index % 2 === 0 && "flex md:flex-row flex-col") ||
-                (index % 2 !== 0 && "md:flex-row-reverse")
+                (index % 2 !== 0 && "md:flex-row-reverse w-full flex flex-col")
               }`}
               key={item.id}
             >
-              <h1 className="md:text-8xl text-[20px] font-bold text-[#4F616D]">
+              <h1 className="md:text-8xl text-[20px] font-bold text-[#4F616D] px-6">
                 0{item.number}
               </h1>
 
-              <div className="md:w-[931px] w-[340px] bg-white p-4 rounded-3xl mx-auto">
+              <div className="md:w-[931px] w-full bg-white p-4 rounded-3xl mx-auto">
                 <img
                   src={item.image}
                   className="md:w-auto md:h-auto hidden md:flex"
@@ -158,7 +158,7 @@ const Courses = () => {
 
                 <img
                   src={item.mbImage}
-                  className="md:w-auto md:h-auto md:hidden flex"
+                  className="md:w-auto w-full md:h-auto md:hidden flex"
                   alt="NO IMAGE FOT THIS COURSE"
                   onError={() =>
                     console.error("Image failed to load for:", item.mbImage)
@@ -201,6 +201,7 @@ const Courses = () => {
                     <span>{item.InstructorName}</span>
                   </div>
                 </div>
+
                 <div className="py-6 flex items-center justify-center ">
                   {/* Use Link for navigation */}
                   <Link to={`/courses/${item.name}`}>

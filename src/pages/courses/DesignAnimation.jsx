@@ -11,9 +11,9 @@ const DesignAnimation = () => {
 
   return (
     <>
-      <div className="py-40 px-[80px]">
-        <h1 className="text-[48px] font-bold">Courses</h1>
-        <p className="text-base font-normal text-[#4F616D]">
+      <div className="md:py-40 md:px-[80px] py-20 px-[16px]">
+        <h1 className="md:text-[48px] text-[24px] font-bold">Courses</h1>
+        <p className="text-sm md:text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwaratech Academy&apos; Diverse Range of
           Tech Courses
         </p>
@@ -21,43 +21,51 @@ const DesignAnimation = () => {
         <Link to="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
-        <div className="pt-14 h-full">
+
+        <div className="pt-14 h-full w-full">
           <img src={image} alt="no image" />
-          <div className="flex justify-between px-2 py-[40px] bg-white">
+          <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
-              <h1 className="font-bold text-[48px]">Design/ Animation </h1>
-              <p className="text-base font-normal text-[#4F616D]">
+              <h1 className="font-bold text-[24px] md:text-[48px]">
+                Design/ Animation{" "}
+              </h1>
+              <p className="md:text-base w-[201px] md:w-auto text-xs font-normal text-[#4F616D]">
                 Explore the world of web development, from creating stunning
                 front-end interfaces to building robust back-end systems and
                 mobile applications.
               </p>
             </div>
-            <div className="space-y-4">
-              <h1 className="font-bold text-[36px]">Instructor</h1>
+            <div className="space-y-4 pt-2">
+              <h1 className="font-bold text-[14px] md:text-[36px]">
+                Instructor
+              </h1>
               <span>Mr Victor</span>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col space-y-2 pt-[48px]">
-          <div className="flex justify-between">
-            <h1 className="text-[#00AFF0] font-bold text-[30px]">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               Graphics Design{" "}
             </h1>
-            <span className="text-[#001E2D] font-[600] text-[28px]">
+            <span className="text-[#001E2D] font-[600] text-sm md:text-[28px]">
               Duration: 2 months
             </span>
           </div>
 
-          <div className=" text-[#4F616D] ">
-            <span>Graphic Design</span>
-            <h1>
-              Our Graphic Design course empowers you to become a visual
-              storyteller and creative problem solver. You&apos;ll explore the
-              art of conveying messages, ideas, and concepts through captivating
-              visuals. Here&apos;s what you can expect to learn:
-            </h1>
-            <ul className="list-disc list-inside text-base font-normal">
+          <div className=" text-[#4F616D] space-y-3 ">
+            <div>
+              <span>Graphic Design</span>
+              <h1 className="text-sm md:text-[18px] ">
+                Our Graphic Design course empowers you to become a visual
+                storyteller and creative problem solver. You&apos;ll explore the
+                art of conveying messages, ideas, and concepts through
+                captivating visuals. Here&apos;s what you can expect to learn:
+              </h1>
+            </div>
+
+            <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-2">
               <li>
                 HTML & CSS: Dive into the fundamentals of web development with
                 HTML and CSS. Learn how to structure web pages and apply styling
@@ -91,10 +99,10 @@ const DesignAnimation = () => {
             </ul>
           </div>
 
-          <div className="py-6 pt-[64px]">
+          <div className="py-6 pt-[64px] w-full">
             <ButtonWhite
               className={
-                "flex items-center text-base text-center justify-center w-[399px]"
+                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
               }
               label={
                 <>
@@ -105,12 +113,12 @@ const DesignAnimation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-2 pt-[120px]">
-          <div className="flex justify-between">
-            <h1 className="text-[#00AFF0] font-bold text-[30px]">
+        <div className="flex flex-col space-y-2 pt-[48px]">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               Video editing
             </h1>
-            <span className="text-[#001E2D] font-[600] text-[28px]">
+            <span className="text-[#001E2D] font-[600] text-sm md:text-[28px]">
               Duration: 3 months
             </span>
           </div>
@@ -118,7 +126,7 @@ const DesignAnimation = () => {
           <div className=" text-[#4F616D] ">
             <h1>What You Will Learn:</h1>
 
-            <ul className="list-disc list-inside text-base font-normal">
+            <ul className="list-disc list-inside text-base font-normal space-y-2 pt-4">
               <li>
                 Animation Fundamentals: Master the basics of animation,
                 including keyframes, timing, and easing, to create dynamic
@@ -154,7 +162,7 @@ const DesignAnimation = () => {
           <div className="py-6 pt-[64px]">
             <ButtonWhite
               className={
-                "flex items-center text-base text-center justify-center w-[399px]"
+                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
               }
               label={
                 <>
@@ -165,20 +173,20 @@ const DesignAnimation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-2 pt-[120px]">
-          <div className="flex justify-between">
-            <h1 className="text-[#00AFF0] font-bold text-[30px]">
+        <div className="flex flex-col space-y-2 pt-[48px]">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               2D Illustration
             </h1>
-            <span className="text-[#001E2D] font-[600] text-[28px]">
+            <span className="text-[#001E2D] font-[600] text-sm md:text-[28px]">
               Duration: 3 months
             </span>
           </div>
 
-          <div className=" text-[#4F616D] ">
+          <div className=" text-[#4F616D] space-y-3 ">
             <h1>What You Will Learn:</h1>
 
-            <ul className="list-disc list-inside text-base font-normal">
+            <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
                 Drawing Fundamentals: Dive into the fundamentals of drawing,
                 covering techniques, perspective, and composition.
@@ -207,7 +215,7 @@ const DesignAnimation = () => {
           <div className="py-6 pt-[64px]">
             <ButtonWhite
               className={
-                "flex items-center text-base text-center justify-center w-[399px]"
+                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
               }
               label={
                 <>
@@ -218,20 +226,20 @@ const DesignAnimation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-2 pt-[120px]">
-          <div className="flex justify-between">
-            <h1 className="text-[#00AFF0] font-bold text-[30px]">
+        <div className="flex flex-col space-y-2 pt-[48px]">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               3D Illustration
             </h1>
-            <span className="text-[#001E2D] font-[600] text-[28px]">
+            <span className="text-[#001E2D] font-[600] text-sm md:text-[28px]">
               Duration: 3 months
             </span>
           </div>
 
-          <div className=" text-[#4F616D] ">
+          <div className=" text-[#4F616D] space-y-3 ">
             <h1>What You Will Learn:</h1>
 
-            <ul className="list-disc list-inside text-base font-normal">
+            <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
                 3D Modeling: Learn the art of 3D modeling, creating intricate
                 three-dimensional objects and environments.
@@ -261,7 +269,7 @@ const DesignAnimation = () => {
           <div className="py-6 pt-[64px]">
             <ButtonWhite
               className={
-                "flex items-center text-base text-center justify-center w-[399px]"
+                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
               }
               label={
                 <>
