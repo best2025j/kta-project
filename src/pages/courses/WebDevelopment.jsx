@@ -10,51 +10,59 @@ const WebDevelopment = () => {
 
   return (
     <>
-      <div className="py-40 px-[80px]">
-        <h1 className="text-[48px] font-bold">Courses</h1>
-        <p className="text-base font-normal text-[#4F616D]">
+      <div className="md:py-40 md:px-[80px] py-20 px-[16px]">
+        <h1 className="md:text-[48px] text-[24px] font-bold">Courses</h1>
+        <p className="text-sm md:text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
           Tech Courses
-        </p>{" "}
+        </p>
+
         {/* Added a "Back to Courses" button using the Link component */}
         <Link to="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 
-        <div className="pt-14 h-full">
+        <div className="pt-14 h-full w-full">
           <img src={image} alt="no image" />
-          <div className="flex justify-between px-2 py-[40px] bg-white">
+          <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
-              <h1 className="font-bold text-[48px]">Web Development </h1>
-              <p className="text-base font-normal text-[#4F616D]">
+              <h1 className="font-bold text-[24px] md:text-[48px]">
+                Web Development{" "}
+              </h1>
+              <p className="md:text-base w-[201px] md:w-auto text-xs font-normal text-[#4F616D]">
                 Explore the world of web development, from creating stunning
                 front-end interfaces to building robust back-end systems and
                 mobile applications.
               </p>
             </div>
-            <div className="space-y-4">
-              <h1 className="font-bold text-[36px]">Instructor</h1>
-              <span>Mr Azeez</span>
+
+            <div className="space-y-4 pt-2">
+              <h1 className="font-bold text-[14px] md:text-[36px]">
+                Instructor
+              </h1>
+              <span className="text-xs md:text-[18px]">Mr Azeez</span>
             </div>
           </div>
         </div>
+
         <div className="flex flex-col space-y-2 pt-[48px]">
-          <div className="flex justify-between">
-            <h1 className="text-[#00AFF0] font-bold text-[30px]">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               Front-end Development
             </h1>
-            <span className="text-[#001E2D] font-[600] text-[28px]">
+            <span className="text-[#001E2D] font-[600] text-sm md:text-[28px]">
               Duration: 2 months
             </span>
           </div>
 
-          <div className=" text-[#4F616D] ">
+          <div className=" text-[#4F616D] space-y-3 ">
             <h1>
               In our Front-End Development course, you&apos;ll master the art of
               creating user-friendly and visually appealing websites.
               Here&apos;s what you can expect to learn:
             </h1>
-            <ul className="list-disc list-inside text-[18px] font-normal">
+
+            <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
                 HTML & CSS: Dive into the fundamentals of web development with
                 HTML and CSS. Learn how to structure web pages and apply styling
@@ -88,10 +96,10 @@ const WebDevelopment = () => {
             </ul>
           </div>
 
-          <div className="py-6 pt-[64px]">
+          <div className="py-6 pt-[64px] w-full ">
             <ButtonWhite
               className={
-                "flex items-center text-base text-center justify-center w-[399px]"
+                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
               }
               label={
                 <>
@@ -102,23 +110,26 @@ const WebDevelopment = () => {
           </div>
         </div>
         <div className="flex flex-col space-y-2 pt-[120px]">
-          <div className="flex justify-between">
-            <h1 className="text-[#00AFF0] font-bold text-[30px]">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               Back-end Development
             </h1>
-            <span className="text-[#001E2D] font-[600] text-[28px]">
+            <span className="text-[#001E2D] font-[600] md:text-[28px]">
               Duration: 3 months
             </span>
           </div>
 
-          <div className=" text-[#4F616D] ">
-            <h1>What You Will Learn:</h1>
-            <h1>
-              Our Back-End Development course equips you with the skills to
-              create robust server-side systems and manage databases.
-              Here&apos;s what you&apos;ll learn:
-            </h1>
-            <ul className="list-disc list-inside text-[18px] font-normal">
+          <div className=" text-[#4F616D] space-y-3 md:space-y-0">
+            <div>
+              <h1>What You Will Learn:</h1>
+              <h1>
+                Our Back-End Development course equips you with the skills to
+                create robust server-side systems and manage databases.
+                Here&apos;s what you&apos;ll learn:
+              </h1>
+            </div>
+
+            <ul className="list-disc list-inside md:text-[18px] text-sm font-normal space-y-3">
               <li>
                 Server-Side Scripting: Dive into server-side scripting languages
                 like Node.js or Python to build the back-end logic of web
@@ -151,7 +162,7 @@ const WebDevelopment = () => {
           <div className="py-6 pt-[64px]">
             <ButtonWhite
               className={
-                "flex items-center text-base text-center justify-center w-[399px]"
+                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
               }
               label={
                 <>

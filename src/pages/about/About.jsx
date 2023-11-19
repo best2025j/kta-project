@@ -8,11 +8,11 @@ import SectionContents from "../../components/layout/SectionContents";
 const About = () => {
   return (
     <>
-      <div className="py-28 px-[60px]">
-        <div className="flex items-center justify-center h-full w-full mx-auto ">
-          <div className="py-40 space-y-[20px]">
-            <h1 className="font-bold text-[48px]">About Us</h1>
-            <p className="w-[439px]">
+      <div className="py-28 md:px-[60px] w-full h-full">
+        <div className="flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto ">
+          <div className="md:py-40 space-y-[20px] ">
+            <h1 className="font-bold text-[24px] md:text-[48px]">About Us</h1>
+            <p className="md:w-[439px] w-[326px] text-[12px] md:text-[16px]">
               At Kwaratech Academy, we believe that technology has the power to
               transform lives, open doors to opportunities, and unlock the
               potential within every individual. Our journey began with a simple
@@ -21,34 +21,45 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-[38px]">
-            <img src="/booksLab.png" alt="pix" />
+          <div className="flex flex-col md:gap-[38px] pt-10 p-2">
+            <img src="/booksLab.png" alt="pix" className="w-full h-full" />
 
-            <div className="flex py-4 space-x-6 ">
-              <img src="/schoolBoy.png" alt="pix 1" />
-              <img src="/adult.png" alt="pix 2" />
+            <div className="flex py-4 space-x-2 ">
+              <img
+                className="w-[180px] h-[100px] md:w-auto md:h-auto"
+                src="/schoolBoy.png"
+                alt="pix 1"
+              />
+              <img
+                className="w-[180px] h-[100px] md:w-auto md:h-auto"
+                src="/adult.png"
+                alt="pix 2"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="space-y-4 flex flex-col justify-center items-center mx-auto text-center px-[112px]">
-        <h1 className="font-bold text-[48px]">Who We Are</h1>
-        <p className="w-[430px] text-md font-normal">
+      <div className="space-y-4 flex flex-col justify-center items-center mx-auto text-center md:px-[112px] px-4">
+        <h1 className="font-bold text-[24px] md:text-[48px] ">Who We Are</h1>
+        <p className="w-[286px] md:w-[430px] text-xs md:text-md font-normal">
           We are a passionate team of educators, innovators, and tech
           enthusiasts dedicated to bridging the digital gap.
         </p>
-        <div className="pt-[60px]">
+        <div className="md:pt-[60px]">
           <img src="/vid.png" alt="pix-4" />
         </div>
       </div>
 
-      <div className="flex justify-between pl-[112px]">
-        <div className="gap-[48px] inline-flex flex-col py-[120px]">
-          <h1 className="font-bold text-[48px]">What We Stand For</h1>
-          <div className="flex flex-col gap-24 text-start px-4">
-            <div className="flex">
-              <div>
+      <div className="flex justify-between md:pl-[112px]">
+        <div className="md:gap-[48px] inline-flex flex-col md:py-[120px] py-[20px]">
+          <h1 className="font-bold text-[24px] md:text-[48px] pl-6">
+            What We Stand For
+          </h1>
+
+          <div className="flex flex-col md:gap-44 gap-10 text-start px-6 py-12">
+            <div className="flex flex-col md:flex-row md:space-x-10 space-y-12 md:space-y-0 md:gap-0">
+              <div className="space-y-3">
                 <div>
                   <svg
                     width="56"
@@ -69,14 +80,16 @@ const About = () => {
                   </svg>
                 </div>
 
-                <h1 className="font-bold text-[36px]">Inclusivity</h1>
-                <p className="w-[321px]">
+                <h1 className="font-bold text-[24px] md:text-[36px]">
+                  Inclusivity
+                </h1>
+                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
                   We welcome learners from all walks of life, irrespective of
                   age, background, or experience.
                 </p>
               </div>
 
-              <div>
+              <div className="space-y-3">
                 <div>
                   <svg
                     width="56"
@@ -96,7 +109,7 @@ const About = () => {
                         fill="#00AFF0"
                       />
                       <path
-                        d="M41.6732 24.3133C41.0432 24.01 40.4366 23.7066 39.8766 23.3566C39.4099 23.0766 38.9432 22.7733 38.4999 22.4466C38.1266 22.2133 37.7066 21.8633 37.2866 21.5133C37.2399 21.49 37.0999 21.3733 36.9132 21.1866C36.1899 20.6033 35.4199 19.81 34.6966 18.9466C34.6499 18.9 34.5099 18.76 34.3932 18.55C34.1599 18.2933 33.8099 17.85 33.5066 17.36C33.2499 17.0333 32.9466 16.5666 32.6666 16.0766C32.3166 15.4933 32.0132 14.91 31.7332 14.3033C31.4299 13.65 31.1966 13.0433 30.9866 12.46L18.4332 25.0133C17.6166 25.83 16.8232 27.37 16.6599 28.5133L15.6566 35.4666C15.4466 36.9366 15.8432 38.3133 16.7532 39.2233C17.5232 39.9933 18.5732 40.39 19.7399 40.39C19.9966 40.39 20.2532 40.3666 20.5099 40.3433L27.4399 39.3633C28.5832 39.2 30.1232 38.43 30.9399 37.59L43.4932 25.0366C42.9099 24.85 42.3266 24.5933 41.6732 24.3133Z"
+                        d="M41.6732 24.3133C41.0432 24.01 40.4366 23.7066 39.8766 23.3566C39.4099 23.0766 38.9432 22.7733 38.4999 22.4466C38.1266 22.2133 37.7066 21.8633 37.2866 21.5133C37.2399 21.49 37.0999 21.3733 36.9132 21.1866C36.1899 20.6033 35.4199 19.81 34.6966 18.9466C34.6499 18.9 34.5099 18.76 34.3932 18.55C34.1599 18.2933 33.8099 17.85 33.5066 17.36C33.2499 17.0333 32.9466 16.5666 32.6666 16.0766C32.3166 15.4933 32.0132 14.91 31.7332 14.3033C31.4299 13.65 31.1966 13.0433 30.9866 12 md:space-y-0.46L18.4332 25.0133C17.6166 25.83 16.8232 27.37 16.6599 28.5133L15.6566 35.4666C15.4466 36.9366 15.8432 38.3133 16.7532 39.2233C17.5232 39.9933 18.5732 40.39 19.7399 40.39C19.9966 40.39 20.2532 40.3666 20.5099 40.3433L27.4399 39.3633C28.5832 39.2 30.1232 38.43 30.9399 37.59L43.4932 25.0366C42.9099 24.85 42.3266 24.5933 41.6732 24.3133Z"
                         fill="#00AFF0"
                       />
                     </g>
@@ -107,16 +120,19 @@ const About = () => {
                     </defs>
                   </svg>
                 </div>
-                <h1 className="font-bold text-[36px]">Quality Education</h1>
-                <p className="w-[321px]">
+
+                <h1 className="font-bold text-[24px] md:text-[36px]">
+                  Quality Education
+                </h1>
+                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
                   We are committed to providing high-quality, industry-relevant
                   tech education.
                 </p>
               </div>
             </div>
 
-            <div className="flex">
-              <div>
+            <div className="flex flex-col md:flex-row md:space-x-10 space-y-12 md:space-y-0 ">
+              <div className="space-y-3">
                 <div>
                   <svg
                     width="56"
@@ -148,14 +164,17 @@ const About = () => {
                     </defs>
                   </svg>
                 </div>
-                <h1 className="font-bold text-[36px]">Innovation</h1>
-                <p className="w-[321px]">
+
+                <h1 className="font-bold text-[24px] md:text-[36px]">
+                  Innovation
+                </h1>
+                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
                   We stay at the forefront of technological advancements to
                   offer cutting-edge programs.
                 </p>
               </div>
 
-              <div>
+              <div className="space-y-3">
                 <div>
                   <svg
                     width="56"
@@ -201,8 +220,11 @@ const About = () => {
                     </defs>
                   </svg>
                 </div>
-                <h1 className="font-bold text-[36px]">Community</h1>
-                <p className="w-[321px]">
+
+                <h1 className="font-bold text-[24px] md:text-[36px]">
+                  Community{" "}
+                </h1>
+                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
                   We foster a supportive community where learners can connect,
                   collaborate, and grow together.
                 </p>
@@ -211,15 +233,15 @@ const About = () => {
           </div>
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <img src="/KTA2.png" alt="kta" />
         </div>
       </div>
 
-      <div className="py-[64px] px-[112px] space-y-6">
-        <div className="w-[439px]">
-          <h1 className="font-bold text-[36px]">Our Vision</h1>
-          <p className="text-lg">
+      <div className="md:py-[64px] md:px-[112px] space-y-6 px-4">
+        <div className="md:w-[439px] w-[326px]">
+          <h1 className="font-bold text-[24px] md:text-[36px]">Our Vision</h1>
+          <p className="text-xs md:text-lg">
             We envision a world where technology is a tool for empowerment,
             where opportunities are boundless, and where every individual can
             reach their full potential. With this vision as our guiding star, we
@@ -243,10 +265,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center py-40">
-          <div className="w-[439px]">
-            <h1 className="font-bold text-[48px]">Begin your career</h1>
-            <p className="text-[16px]">
+        <div className="flex flex-col md:flex-row justify-between items-center md:py-40 py-20 md:gap-10">
+          <div className="md:w-[439px] w-[326px]">
+            <h1 className="font-bold text-[24px] md:text-[48px]">
+              Begin your career
+            </h1>
+            <p className="text-xs md:text-[16px]">
               Whether you&apos;re a student taking your first steps into the
               tech world or a professional seeking to upskill, Kwaratech Academy
               is here to guide you. We invite you to be a part of our vibrant
@@ -258,7 +282,8 @@ const About = () => {
               <Link to={`/courses`}>
                 <ButtonWhite
                   className={
-                    "flex items-center w-full text-base text-center justify-center"
+                    // "flex items-center w-full md:text-base text-sm justify-center"
+                    "flex items-center text-sm md:text-base text-center justify-center w-full md:w-[399px]"
                   }
                   label={
                     <>
@@ -269,7 +294,7 @@ const About = () => {
               </Link>
             </div>
           </div>
-          <img src="/ktaSvg.png" alt="" className="w-auto h-auto "/>
+          <img src="/ktaSvg.png" alt="" className="w-auto h-auto " />
         </div>
       </div>
 
