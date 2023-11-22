@@ -57,7 +57,7 @@ const Instructors = () => {
 
         <div className="md:py-28">
           <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full">
-            {visibleImages.map((item, index) => (
+            {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
                 <img src={item.image} alt="" />
 
