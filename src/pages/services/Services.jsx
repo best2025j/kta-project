@@ -389,7 +389,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="pt-[243px] flex justify-between items-center space-y-10 flex-col md:flex-row">
+          <div className="md:pt-[243px] flex justify-between items-center space-y-10 flex-col md:flex-row">
             <div className="">
               <h1 className="md:text-[40px] text-[24px] font-bold">
                 Internship Opportunities
